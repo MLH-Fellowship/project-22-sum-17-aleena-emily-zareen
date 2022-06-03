@@ -10,7 +10,11 @@ button {
 }
 
 body {
+
     background-color: #FFD9C0;
+
+    background-color: #00ff9d;
+
     background-size: cover;
     width: auto;
     overflow-x: hidden;
@@ -58,6 +62,7 @@ body {
 }
 
 .profile {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,14 +89,45 @@ body {
     flex-direction: row;
     justify-content: space-around;
     transition: 1s;
+=======
+    background-color: #1d539f !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.profile h1 {
+        font-size: 300%;
+        font-weight: 700;
+        color: white;
+        margin-top:100px;
+
+}
+
+.profile img {
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;       
+        display:inline; display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        transition: 1s;
+
 }
 
 .profile .profile-picture {
     margin-bottom: 30px;
+
     height: 200px;
     width: 200px;
     display: inline;
     display: flex;
+
+    height: 200px;display:inline;display: flex;
+
     flex-direction: row;
     justify-content: space-around;
     transition: 1s;
@@ -101,7 +137,6 @@ body {
     transition: 1s;
     transform: scale(1.6);
 }
-
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
@@ -120,6 +155,7 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
+
 
 
 .about{
@@ -199,3 +235,5 @@ body {
         margin: 0px;
     
 }
+
+
