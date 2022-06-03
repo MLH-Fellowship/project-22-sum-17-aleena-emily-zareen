@@ -9,9 +9,9 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html', title="Portfolio Home", url=os.getenv("URL"))
-@app.route('/base-portfolio')
+@app.route('/aleena-portfolio')
 def portfolio_page():
-    return render_template('base-portfolio.html', title="Aleena's Portfolio", url=os.getenv("URL"), author="Aleena")
+    return render_template('aleena-portfolio.html', title="Aleena's Portfolio", url=os.getenv("URL"), author="Aleena")
 """@app.route('/emily-portfolio')
 def index():
     return render_template('index.html', title="Emily's Portfolio", url=os.getenv("URL"), author="Emily")

@@ -13,7 +13,7 @@ body {
 
     background-color: #FFD9C0;
 
-    background-color: #00ff9d;
+    background-color: white;
 
     background-size: cover;
     width: auto;
@@ -89,7 +89,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     transition: 1s;
-=======
     background-color: #1d539f !important;
     display: flex;
     flex-direction: row;
@@ -235,5 +234,4 @@ body {
         margin: 0px;
     
 }
-
 
