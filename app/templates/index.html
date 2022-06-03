@@ -13,31 +13,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="./static/styles/menu.css">
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
     <link rel='icon' href='./static/img/nightcat.jpg' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
 
 <body>
-    <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo"><!--Drop down menu-->
-                    <img src="" />
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="/aleena-portfolio">Aleena's Portfolio</a></li>
+                        <li><a href="#">Emily's Portfolio</a></li>
+                        <li><a href="#">Zareen's Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-            </a>
+            </div>
         </div>
-    </header>
+    </div>
+   
+   <!--- <header class="showcase">
+        <div class="container showcase-inner">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor</p>
+            <a href="#" class="btn">rRead More</a>
+        </div>
+    </header>---> 
 
-    
 
-
-</body>
 <!----Aleena Tim section---->
 <section class="about">
     <div class="main">
-        <a href="/base-portfolio"><img src="./static/img/aleena.jpg"></a>
+        <a href="/aleena-portfolio"><img src="./static/img/aleena.jpg"></a>
         <div class="about-text">
             <h2>Aleena Tim</h2>
             <h5><span class="major_color">Computer Science Student</span><span class="hunter_college_color"> @ Hunter College</span></h5>
@@ -61,7 +73,7 @@
 <!----Zareen Kabir section---->
 <section class="about">
     <div class="main">
-        <img src="./static/img/logo.jpg">
+        <img src="./static/img/zareen.jpg">
         <div class="about-text">
             <h2>Zareen Kabir</h2>
             <h5><span class="major_color">Computer Science Student</span><span class="hunter_college_color"> @ Hunter College</span></h5>
@@ -70,4 +82,5 @@
         </div>
     </div>
 </section>
+</body>
 </html>
