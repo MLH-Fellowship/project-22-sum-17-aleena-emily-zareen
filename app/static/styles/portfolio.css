@@ -1,0 +1,18 @@
+body {
+    background-color: #FFD9C0;
+    background-size: cover;
+    width: auto;
+    overflow-x: hidden;
+    font-family: "Roboto", serif;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.nav-bar {
+    width: 100%;
+    display: inline-block;
+    background-color: #FFD9C0;
+    font-family: "Roboto", serif;
+    font-weight: 700 !important;
+    padding-top: 10px;
+}
