@@ -75,39 +75,39 @@
         "hobbies": "",
         "education": [
             {
-                "name": "Hunter College",
-                "major": "Computer Science",
-                "year": "Junior"
+                "name": "Ontario Tech University",
+                "major": "Software Engineering",
+                "year": "Freshman"
             }
         ],
         "work": [
             {
-                "title": "",
-                "company": "",
-                "start": "",
-                "end": "",
-                "description": ""
+                "title": "Data Science / Machine Learning Intern",
+                "company": "Axcessiom Technologies",
+                "start": "Jan 2022",
+                "end": "present",
+                "description": "Developing an offline speech recognition functionality using PocketSphinx."
             },
             {
-                "title": "",
-                "company": "",
-                "start": "",
-                "end": "",
-                "description": ""
+                "title": "Workshop Mentor",
+                "company": "Canada Learning Code",
+                "start": "Sep 2020",
+                "end": "present",
+                "description": "Instruct, attend, and mentor students in coding lessons and workshops."
             }
         ],
         "projects": [
             {
-                "title": "",
-                "description": "",
-                "image": "",
-                "link": ""
+                "title": "American Sign Language Interpreter",
+                "description": "Interactive website using JavaScript, TensorFlow, ml5.js, p5.js, and Speech Synthesis libraries. Recognizes and displays messages from webcam input of hand signals.",
+                "image": "asl5js.png",
+                "link": "https://youtu.be/EXRUpbgf1SA"
             },
             {
-                "title": "",
-                "description": "",
-                "image": "",
-                "link": ""
+                "title": "Computer Vision Snake",
+                "description": "Classic game of Snake controlled by hand positions from webcam input",
+                "image": "ML Snake.png",
+                "link": "https://glitch.com/~ml-snake"
             },
             {
                 "title": "",
@@ -119,19 +119,19 @@
         "social": [
             {
                 "name": "LinkedIn",
-                "link": ""
+                "link": "https://www.linkedin.com/in/-emily-lai/"
             },
             {
                 "name": "GitHub",
-                "link": ""
+                "link": "https://github.com/emilyirenelai"
             },
             {
                 "name": "Discord",
-                "link": ""
+                "link": "EL#3269"
             },
             {
                 "name": "Email",
-                "link": ""
+                "link": "emilyirenelai@gmail.com"
             }
         ]
     },
