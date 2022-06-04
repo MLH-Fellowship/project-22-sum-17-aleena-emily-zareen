@@ -209,6 +209,7 @@ h5 {
 }
 
 
+
 .slide-1,.slide-2,.slide-3,.slide-4{
     display: block;
     position: absolute;
@@ -255,4 +256,3 @@ h5 {
     75%{opacity: 1;}
     100%{opacity: 0;}
 }
-
