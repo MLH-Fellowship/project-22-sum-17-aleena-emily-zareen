@@ -4,9 +4,12 @@ h4,
 button {
     font-family: "Roboto", serif;
 }
+.slider{
+    height: 740px;
+}
 .container{
     width: 100%;
-    top: 740px;
+    top: 985px;
     background: #101010;
     display: flex;
     align-items: center;
@@ -34,7 +37,7 @@ h6{
     top:22%;
     left:22%;
     transform: translate(-50%,-50%);
-    color:rgb(0, 255, 238);
+    color:rgb(139, 245, 238);
     -webkit-text-stroke-width: 1.7px;
     -webkit-text-stroke-color: #000153;
 }
@@ -46,7 +49,7 @@ h4{
     top:58%;
     right:8%;
     transform: translate(-50%,-50%);
-    color:rgb(0, 255, 238);
+    color:rgb(139, 245, 238);
     -webkit-text-stroke-width: 1.7px;
     -webkit-text-stroke-color: #000153;
     background-image: linear-gradient(60deg, #00f2ff, #ffffff, #00f2ff, #ffffff);
@@ -133,7 +136,7 @@ body{
     height: 555px;
     width: 335px;
     padding: 20px 35px;
-    background: #1e72ad;
+    background: #004374;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -173,7 +176,7 @@ body{
     cursor: pointer;
 }
 .title h2 {
-    color: #0044ff;
+    color:#004374;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
