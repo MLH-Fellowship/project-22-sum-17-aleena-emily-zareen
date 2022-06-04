@@ -24,5 +24,5 @@ def aleena_portfolio_page():
 def emily_portfolio_page():
     return render_template('emily-portfolio.html', title="Emily's Portfolio", url=os.getenv("URL"), author="Emily")
 @app.route('/zareen-portfolio')
-def portfolio_page():
+def zareen_portfolio_page():
     return render_template('zareen-portfolio.html', title="Zaneer's Portfolio", url=os.getenv("URL"), author="Zareen")
