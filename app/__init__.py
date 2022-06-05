@@ -16,15 +16,20 @@ def index():
     allUsers = data    
     return render_template('index.html', title="Home", allUsers=allUsers)
 
-@app.route('/portfolio/<string:username>')
-def portfolio(username):
-    userData = data[username]
-    allUsers = data
-    return render_template('portfolio.html', username=username, userData=userData, allUsers=allUsers)
+@app.route('/aleena-tim-portfolio')
+def aleena_portfolio():
+    allUsers = data    
+    return render_template('aleena-tim-portfolio.html', title="Aleena", allUsers=allUsers)
 
-@app.route('/portfolio')
-def b_portfolio():
-    return render_template('portfolio.html')
+@app.route('/portfolio/emily-portfolio')
+def emily_portfolio():
+    allUsers = data    
+    return render_template('emily-portfolio.html', title="Emily", allUsers=allUsers)
+
+@app.route('/portfolio/zareen-portfolio')
+def zareen_portfolio():
+    allUsers = data    
+    return render_template('zareen-portfolio.html', title="Zareen", allUsers=allUsers)
 
 #@app.route('/emily-portfolio')
 #def emily_portfolio_page():
