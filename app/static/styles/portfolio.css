@@ -438,7 +438,7 @@ footer p:nth-child(2) {
     position: absolute;
     height: 560px;
     width: 95%;
-    max-width: 1550px;
+    max-width: 1350px;
     margin: auto; 
     background: white;
     border-radius: 25px;
@@ -476,6 +476,13 @@ footer p:nth-child(2) {
     transition-delay: .2s;
 }
 .contents{
+    padding: 0 20px 0 35px;
+    width: 530px;
+    margin-left: 50px;
+    opacity: 0;
+    transition: .6s;
+}
+.contents .content-1{
     padding: 0 20px 0 35px;
     width: 530px;
     margin-left: 50px;
@@ -545,9 +552,10 @@ footer p:nth-child(2) {
     transform: scaleX(1);
     width: 100%;
 }
-input{
-    display: none;
-}
+input {
+    width: 0%;
+    height: 0%;
+    }
 .social {
     display: flex;
 }
