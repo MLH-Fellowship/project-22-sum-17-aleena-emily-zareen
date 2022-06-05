@@ -27,7 +27,7 @@ h1{
     transform: translate(-50%,-50%);
     color:#F7FFF7;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000153;
+    -webkit-text-stroke-color: #253542;
 }
 h6{
     cursor: default;
@@ -39,7 +39,7 @@ h6{
     transform: translate(-50%,-50%);
     color:#F7FFF7;
     -webkit-text-stroke-width: 1.7px;
-    -webkit-text-stroke-color: #000153;
+    -webkit-text-stroke-color: #253542;
 }
 h4{
     cursor: default;
@@ -65,7 +65,7 @@ body{
 	width: 100%;
 	padding: 100px 0px;
     /*background-color: #edb6b0;*/
-    background-color: #9BD4D3;
+    background-color: #DBE3E5;
 }
 .about img{
     transition: 1s;
@@ -133,7 +133,7 @@ body{
     height: 555px;
     width: 335px;
     padding: 20px 35px;
-    background: #004374;
+    background: #253542;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -146,7 +146,7 @@ body{
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #f9004d;
+    color: 	#D9B45D;
 
 }
 
@@ -157,7 +157,7 @@ body{
     margin-bottom: 25px;
 }
 .card .button {
-    background-color: #f9004d;
+    background-color: #D9B45D;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -169,7 +169,7 @@ body{
 
 .card .button:hover {
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid 	#D9B45D;
     cursor: pointer;
 }
 .title h2 {
@@ -197,8 +197,8 @@ h5 {
 .name_college_color{    /*Emily's college color*/
     color:rgb(200, 0, 255);
 }
-.name_college_color{    /*Zareen's college color*/
-    color:rgb(200, 0, 255);
+.mcmaster_college_color{    /*Zareen's college color*/
+    color:rgb(192, 0, 0);
 }
 .table{
     position: absolute;
