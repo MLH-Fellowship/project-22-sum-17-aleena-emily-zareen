@@ -54,71 +54,58 @@
         </div>
     </div>
 
-    <!--- <header class="showcase">
-        <div class="container showcase-inner">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor</p>
-            <a href="#" class="btn">rRead More</a>
-        </div>
-    </header>--->
 
-
-    <!----Aleena Tim section---->
-    <div class="container">
-        <div class="about">
-            <div class="title">
-                <h2>Meet the Team!</h2>
+    <body>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
             </div>
-
-            <div class="box">
-                <div class="card">
-                    <i class="fa fa-gamepad"></i>
-                    <a href="/aleena-portfolio"><img src="./static/img/aleena.jpg"></a>
-                    <h5><span class="major_color">Computer Science Student<br></span><span class="hunter_college_color">
-                            @
-                            Hunter College</span></h5>
-                    <div class="pra">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </p>
-
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <i class="far fa-user"></i>
-                    <a href="/emily-portfolio"><img src="./static/img/emily.png"></a>
-                    <h5><span class="major_color">Software Engineering Student<br></span><span class="ontario_tech_color">
-                        @
-                            Ontario Tech University</span>
-                    </h5>
-                    <div class="pra">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </p>
-
-                        <p style="text-align: center;">
-                            <a class="button" href="/emily-portfolio">Read More</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <i class="far fa-bell"></i>
-                    <a href="/aleena-portfolio"><img src="./static/img/zareen.jpg"></a>
-                    <h5>Insert Hobby Here</h5>
-                    <div class="pra">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </p>
-
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="/">Homepage</a></li>
+                            <li><a href="/base-portfolio">Aleena's Portfolio</a></li>
+                            <li><a href="/base-portfolio">Emily's Portfolio</a></li>
+                            <li><a href="/zareen-portfolio">Zareen's Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="about">
+                <div class="title">
+                    <h2>Meet the Team!</h2>
+                </div>
+                <script>
+                    console.log(('{{ allUsers|tojson }}'))
+                    console.log(("{{ allUsers['students'][1]['name'] }}"))
+                    console.log(("{{ allUsers['students'][0]['education'][0]['name'] }}"))
+                </script>
+                <div class="box">
+                    {% for i in allUsers.students %}
+                    <div class="card">
+                        <i class="fa fa-gamepad"></i>
+                        <a href="/portfolio/{{i.name.split()[0]}}"><img src="./static/img/{{i.name.split()[0]}}.png"></a>
+                        <h3>{{ i.name }}</h3>
+                        <h5><span class="major_color">{{ i.education[0]['major']}}<br></span><span class="college_color">
+                                @
+                                {{ i.education[0]['name']}}</span></h5>
+                        <div class="pra">
+                            <p style="text-align: center;">
+                                <a class="button" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
 </div>
 =======
 
@@ -142,6 +129,4 @@
     </div>
 
 </body>
-
-</html>
 </html>
