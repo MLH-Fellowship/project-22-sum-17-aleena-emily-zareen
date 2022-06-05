@@ -1,206 +1,208 @@
 {
-    "aleena-tim": {
-        "firstName": "Aleena",
-        "lastName": "Tim",
-        "about": "I'm currently a Junior Computer Science student studying at Hunter College in New York City. I am aspiring software engineer and during my free time, I like to play MOBA games and code new projects!",
-        "image": "",
-        "hobbies": "",
-        "education": [
-            {
-                "name": "Hunter College",
-                "major": "Computer Science",
-                "year": "Junior"
-            }
-        ],
-        "work": [
-            {
-                "title": "Coding Instructor",
-                "company": "ScholarStem",
-                "start": "Sep 2021",
-                "end": "May 2022",
-                "description": "Assigned projects that covers fundamental coding concepts and topics to reinforce computer science knowledge.Communicated with the CEO about classroom structure, project ideas and instructor progress. Coordinated virtual visits and training sessions to grade each instructor’s performance and engagement of the class. Hosted end-of-the-year “coding fairs” for students to showcase their best projects for parents, students and staff and were given prizes"
-            },
-            {
-                "title": "WiTNY Robotics Research",
-                "company": "WiTNY Foundation",
-                "start": "Sep 2018",
-                "end": "Dec 2018",
-                "description": "Designed various educational games for the NAO Robot in order to enforce positive social and cognitive skills for children with disabilities. Utilized the NAO Robot’s object recognition, speech recognition and touch sensors to capture and respond to several sign language gestures. Constructed a research presentation regarding the NAO Robot's capabilities and its positive impact for early childhood education"
-            }
-        ],
-        "projects": [
-            {
-                "title": "IGN Video Playlist",
-                "description": "(Developed a responsive, single-page video playlist app using JavaScript, CSS and HTML and pulling data from IGN’s API w/ Ajax. Video player includes custom stylized video controls and the playlist queue. Loads the first video in the playlist into the video element on initial page load. After each video finishes playback, the next video in the list is automatically played until the playlist is completed). Created response single-page video playlist with JS, CSS, HTML Connected to IGN’s public API using AJAX, displaying the latest videos, titles, description, tags and dates Coded customized video controls and automatic playback queue to complete each video in the playlist",
-                "image": "../static/img/happy_plant.jpg",
-                "link": "https://video-playlist-aleena-tim.glitch.me/"
-            },
-            {
-                "title": "College Statistics Data App",
-                "description": "Created a multi-page application to incorporate different data from each college in order to provide the best information for new students. The application is intended to be used by recent high school graduates or transfer students that want to view a list of college choices that best fits their needs. Developed a multi-page CUNY Statistics Web Scraping Data App with Anaconda, streamlit and Python Parsed important data (web scraping) from niche.com using pandas and BeautifulSoup onto a scatter plot and bar graph using matplot library Implemented filtering and sorting to retrieve specific information such as type of college, tuition, ranking, room and board, admission rate, SAT/ACT requirements, etc.",
-                "image": "../static/img/happy_plant.jpg",
-                "link": "https://cuny-data-app.herokuapp.com/"
-            },
-            {
-                "title": "Coronavirus Warehouse Website",
-                "description": "Developed a fully-functional covid supply store website using PHP, SQL, CSS and HTML through a software engineering sequence of planning (basic functionality), system analysis (case diagram, data flow diagram), system design (entity relationship and mapping (E-R Diagram), data design, database design, GUI, data normalization fields w/ corresponding relational tables)  and working prototype. ",
-                "image": "../static/img/happy_plant.jpg",
-                "link": "https://occss.herokuapp.com/"
-            }
-        ],
-        "social": [
-            {
-                "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/aleenatim/"
-            },
-            {
-                "name": "GitHub",
-                "link": "https://github.com/AleenaTim"
-            },
-            {
-                "name": "Discord",
-                "link": "Aleena#1227"
-            },
-            {
-                "name": "Email",
-                "link": "aleenatim@gmail.com"
-            }
-        ]
-    },
-    "emily-lai": {
-        "firstName": "Emily",
-        "lastName": "Lai",
-        "about": "I'm currently a first year Software Engineering student at Ontario Tech University. I'm also interested in data science, machine learning, and cloud computing.",
-        "image": "",
-        "hobbies": "",
-        "education": [
-            {
-                "name": "Ontario Tech University",
-                "major": "Software Engineering",
-                "year": "Freshman"
-            }
-        ],
-        "work": [
-            {
-                "title": "Data Science / Machine Learning Intern",
-                "company": "Axcessiom Technologies",
-                "start": "Jan 2022",
-                "end": "present",
-                "description": "Developing an offline speech recognition functionality using PocketSphinx."
-            },
-            {
-                "title": "Workshop Mentor",
-                "company": "Canada Learning Code",
-                "start": "Sep 2020",
-                "end": "present",
-                "description": "Instruct, attend, and mentor students in coding lessons and workshops."
-            }
-        ],
-        "projects": [
-            {
-                "title": "American Sign Language Interpreter",
-                "description": "Interactive website using JavaScript, TensorFlow, ml5.js, p5.js, and Speech Synthesis libraries. Recognizes and displays messages from webcam input of hand signals.",
-                "image": "asl5js.png",
-                "link": "https://youtu.be/EXRUpbgf1SA"
-            },
-            {
-                "title": "Computer Vision Snake",
-                "description": "Classic game of Snake controlled by hand positions from webcam input",
-                "image": "ML Snake.png",
-                "link": "https://glitch.com/~ml-snake"
-            },
-            {
-                "title": "",
-                "description": "",
-                "image": "",
-                "link": ""
-            }
-        ],
-        "social": [
-            {
-                "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/-emily-lai/"
-            },
-            {
-                "name": "GitHub",
-                "link": "https://github.com/emilyirenelai"
-            },
-            {
-                "name": "Discord",
-                "link": "EL#3269"
-            },
-            {
-                "name": "Email",
-                "link": "emilyirenelai@gmail.com"
-            }
-        ]
-    },
-    "zareen-kabir": {
-        "firstName": "Zareen",
-        "lastName": "Kabir",
-        "about": "",
-        "image": "",
-        "hobbies": "",
-        "education": [
-            {
-                "name": "McMaster Univeristy",
-                "major": "Engineering Physics",
-                "year": "Junior"
-            }
-        ],
-        "work": [
-            {
-                "title": "Teaching Assistant",
-                "company": "McMaster University Engineering Department",
-                "start": "August 2021",
-                "end": "May 2022",
-                "description": "Taught first year students Python, Auto-CAD and general engineering principles"
-            },
-            {
-                "title": "Student Researcher",
-                "company": "McMaster University",
-                "start": "October 2021",
-                "end": "May 2022",
-                "description": "Worked under Dr. Boyang Zhang to classify colon organoids using deep learning models to get insights into human physciology in comparison to animal models "
-            }
-        ],
-        "projects": [
-            {
-                "title": "Object Detection and Classification",
-                "description": "A Raspberry Pi based hardware build that utilizes Pan-Tilt HAT and camera system to detect and track objects. TensorFlowLite Used for object recognition.",
-                "image": "raspberrypi.jpg",
-                "link": ""
-            },
-            {
-                "title": "Towers of Hantow",
-                "description": "A visual representation of the Tower of Hantow Problem, created in C",
-                "image": "hantow-project.png",
-                "link": "https://github.com/zareentk/Tower-of-Hanoi"
-            },
-            {
-                "title": "",
-                "description": "",
-                "image": "",
-                "link": ""
-            }
-        ],
-        "social": [
-            {
-                "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/zareenkabir/"
-            },
-            {
-                "name": "GitHub",
-                "link": "https://github.com/zareentk"
-            },
-            {
-                "name": "Discord",
-                "link": "Zareen#7780"
-            },
-            {
-                "name": "Email",
-                "link": "zareenk@outlook.com"
-            }
-        ]
-    }
+    "students": [
+        {
+            "name": "Aleena Tim",
+            "username": "aleena-tim",
+            "about": "I'm currently a Junior Computer Science student studying at Hunter College in New York City. I am aspiring software engineer and during my free time, I like to play MOBA games and code new projects!",
+            "image": "",
+            "hobbies": "",
+            "education": [
+                {
+                    "name": "Hunter College",
+                    "major": "Computer Science",
+                    "year": "Junior"
+                }
+            ],
+            "work": [
+                {
+                    "title": "Coding Instructor",
+                    "company": "ScholarStem",
+                    "start": "Sep 2021",
+                    "end": "May 2022",
+                    "description": "Assigned projects that covers fundamental coding concepts and topics to reinforce computer science knowledge.Communicated with the CEO about classroom structure, project ideas and instructor progress. Coordinated virtual visits and training sessions to grade each instructor’s performance and engagement of the class. Hosted end-of-the-year “coding fairs” for students to showcase their best projects for parents, students and staff and were given prizes"
+                },
+                {
+                    "title": "WiTNY Robotics Research",
+                    "company": "WiTNY Foundation",
+                    "start": "Sep 2018",
+                    "end": "Dec 2018",
+                    "description": "Designed various educational games for the NAO Robot in order to enforce positive social and cognitive skills for children with disabilities. Utilized the NAO Robot’s object recognition, speech recognition and touch sensors to capture and respond to several sign language gestures. Constructed a research presentation regarding the NAO Robot's capabilities and its positive impact for early childhood education"
+                }
+            ],
+            "projects": [
+                {
+                    "title": "IGN Video Playlist",
+                    "description": "(Developed a responsive, single-page video playlist app using JavaScript, CSS and HTML and pulling data from IGN’s API w/ Ajax. Video player includes custom stylized video controls and the playlist queue. Loads the first video in the playlist into the video element on initial page load. After each video finishes playback, the next video in the list is automatically played until the playlist is completed). Created response single-page video playlist with JS, CSS, HTML Connected to IGN’s public API using AJAX, displaying the latest videos, titles, description, tags and dates Coded customized video controls and automatic playback queue to complete each video in the playlist",
+                    "image": "../static/img/happy_plant.jpg",
+                    "link": "https://video-playlist-aleena-tim.glitch.me/"
+                },
+                {
+                    "title": "College Statistics Data App",
+                    "description": "Created a multi-page application to incorporate different data from each college in order to provide the best information for new students. The application is intended to be used by recent high school graduates or transfer students that want to view a list of college choices that best fits their needs. Developed a multi-page CUNY Statistics Web Scraping Data App with Anaconda, streamlit and Python Parsed important data (web scraping) from niche.com using pandas and BeautifulSoup onto a scatter plot and bar graph using matplot library Implemented filtering and sorting to retrieve specific information such as type of college, tuition, ranking, room and board, admission rate, SAT/ACT requirements, etc.",
+                    "image": "../static/img/happy_plant.jpg",
+                    "link": "https://cuny-data-app.herokuapp.com/"
+                },
+                {
+                    "title": "Coronavirus Warehouse Website",
+                    "description": "Developed a fully-functional covid supply store website using PHP, SQL, CSS and HTML through a software engineering sequence of planning (basic functionality), system analysis (case diagram, data flow diagram), system design (entity relationship and mapping (E-R Diagram), data design, database design, GUI, data normalization fields w/ corresponding relational tables)  and working prototype. ",
+                    "image": "../static/img/happy_plant.jpg",
+                    "link": "https://occss.herokuapp.com/"
+                }
+            ],
+            "social": [
+                {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/aleenatim/"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/AleenaTim"
+                },
+                {
+                    "name": "Discord",
+                    "link": "Aleena#1227"
+                },
+                {
+                    "name": "Email",
+                    "link": "aleenatim@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "Emily Lai",
+            "username": "emily-lai",
+            "about": "I'm currently a first year Software Engineering student at Ontario Tech University. I'm also interested in data science, machine learning, and cloud computing.",
+            "image": "",
+            "hobbies": "",
+            "education": [
+                {
+                    "name": "Ontario Tech University",
+                    "major": "Software Engineering",
+                    "year": "Freshman"
+                }
+            ],
+            "work": [
+                {
+                    "title": "Data Science / Machine Learning Intern",
+                    "company": "Axcessiom Technologies",
+                    "start": "Jan 2022",
+                    "end": "present",
+                    "description": "Developing an offline speech recognition functionality using PocketSphinx."
+                },
+                {
+                    "title": "Workshop Mentor",
+                    "company": "Canada Learning Code",
+                    "start": "Sep 2020",
+                    "end": "present",
+                    "description": "Instruct, attend, and mentor students in coding lessons and workshops."
+                }
+            ],
+            "projects": [
+                {
+                    "title": "American Sign Language Interpreter",
+                    "description": "Interactive website using JavaScript, TensorFlow, ml5.js, p5.js, and Speech Synthesis libraries. Recognizes and displays messages from webcam input of hand signals.",
+                    "image": "asl5js.png",
+                    "link": "https://youtu.be/EXRUpbgf1SA"
+                },
+                {
+                    "title": "Computer Vision Snake",
+                    "description": "Classic game of Snake controlled by hand positions from webcam input",
+                    "image": "ML Snake.png",
+                    "link": "https://glitch.com/~ml-snake"
+                },
+                {
+                    "title": "",
+                    "description": "",
+                    "image": "",
+                    "link": ""
+                }
+            ],
+            "social": [
+                {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/-emily-lai/"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/emilyirenelai"
+                },
+                {
+                    "name": "Discord",
+                    "link": "EL#3269"
+                },
+                {
+                    "name": "Email",
+                    "link": "emilyirenelai@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "Zareen Kabir",
+            "username": "zareen-kabir",
+            "about": "I'm currently a Junior Computer Science student studying at Hunter College in New York City. I am aspiring software engineer and during my free time, I like to play MOBA games and code new projects!",
+            "image": "",
+            "hobbies": "",
+            "education": [
+                {
+                    "name": "McMaster University",
+                    "major": "Engineering Physics",
+                    "year": "Junior"
+                }
+            ],
+            "work": [
+                {
+                    "title": "Teaching Assistant",
+                    "company": "McMaster University Engineering Department",
+                    "start": "August 2021",
+                    "end": "May 2022",
+                    "description": "Taught first year students Python, Auto-CAD and general engineering principles"
+                },
+                {
+                    "title": "Student Researcher",
+                    "company": "McMaster University",
+                    "start": "October 2021",
+                    "end": "May 2022",
+                    "description": "Worked under Dr. Boyang Zhang to classify colon organoids using deep learning models to get insights into human physciology in comparison to animal models "
+                }
+            ],
+            "projects": [
+                {
+                    "title": "Object Detection and Classification",
+                    "description": "A Raspberry Pi based hardware build that utilizes Pan-Tilt HAT and camera system to detect and track objects. TensorFlowLite Used for object recognition.",
+                    "image": "raspberrypi.jpg",
+                    "link": ""
+                },
+                {
+                    "title": "Towers of Hantow",
+                    "description": "A visual representation of the Tower of Hantow Problem, created in C",
+                    "image": "hantow-project.png",
+                    "link": "https://github.com/zareentk/Tower-of-Hanoi"
+                },
+                {
+                    "title": "",
+                    "description": "",
+                    "image": "",
+                    "link": ""
+                }
+            ],
+            "social": [
+                {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/zareenkabir/"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/zareentk"
+                },
+                {
+                    "name": "Discord",
+                    "link": "Zareen#7780"
+                },
+                {
+                    "name": "Email",
+                    "link": "zareenk@outlook.com"
+                }
+            ]
+        }
+    ]
 }
