@@ -62,6 +62,13 @@ The terminal will provide an address for you to view the website in a browser.
 - [ ] Adding more animated elements to increase viewer engagement
 
 ## Authors :memo:
-* Aleena Tim ([AleenaTim](https://github.com/AleenaTim))</br>
-* Emily Lai ([emilyirenelai](https://github.com/emilyirenelai))</br>
-* Zareen Kabir ([zareentk](https://github.com/zareentk))
+* Aleena Tim ([AleenaTim](https://github.com/AleenaTim)) :penguin:</br>
+* Emily Lai ([emilyirenelai](https://github.com/emilyirenelai)) :penguin:</br>
+* Zareen Kabir ([zareentk](https://github.com/zareentk)) :penguin:
+
+## Contributing :penguin:
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+:penguin:
