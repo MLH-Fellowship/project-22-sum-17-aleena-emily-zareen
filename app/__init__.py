@@ -15,21 +15,24 @@ data = json.load(dataFile)
 def index():    
     allUsers = data    
     return render_template('index.html', title="Home", allUsers=allUsers)
-@app.route('/aleena-portfolio')
-def aleena_portfolio_page():
-    return render_template('aleena-portfolio.html', title="Aleena's Portfolio", url=os.getenv("URL"), authorFirstName="Aleena", authorLastName="Tim", workExperience=workExperience)
-@app.route('/emily-portfolio')
-def emily_portfolio_page():
-    return render_template('emily-portfolio.html', title="Emily's Portfolio", url=os.getenv("URL"), author="Emily")
-@app.route('/zareen-portfolio')
-def zareen_portfolio_page():
-    return render_template('zareen-portfolio.html', title="Zareen's Portfolio", url=os.getenv("URL"), author="Zareen")
 
-#@app.route('/portfolio/<string:name>')
-#def portfolio(name):
-#    userData = data[name]
-#    allUsers = data
-#    return render_template("portfolio.html", name=name, userData=userData, allUsers=allUsers)
+@app.route('/portfolio/<string:username>')
+def portfolio(username):
+    userData = data[username]
+    allUsers = data
+    return render_template('portfolio.html', username=username, userData=userData, allUsers=allUsers)
+
+@app.route('/portfolio')
+def b_portfolio():
+    return render_template('portfolio.html')
+
+#@app.route('/emily-portfolio')
+#def emily_portfolio_page():
+#    return render_template('emily-portfolio.html', title="Emily's Portfolio", url=os.getenv("URL"), author="Emily")
+
+#@app.route('/zareen-portfolio')
+#def zareen_portfolio_page():
+#    return render_template('zareen-portfolio.html', title="Zareen's Portfolio", url=os.getenv("URL"), author="Zareen")
     
 if __name__ == "__main__":
     app.run(debug=True)
