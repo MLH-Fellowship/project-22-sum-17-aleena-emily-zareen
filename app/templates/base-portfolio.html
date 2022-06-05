@@ -36,10 +36,29 @@
 <html>
 
 <head>
-    <title>Aleena's Portfolio</title>
+    <title>{{ title }}</title>
 </head>
 
 <body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/aleena-portfolio">Aleena's Portfolio</a></li>
+                        <li><a href="/base-portfolio">Emily's Portfolio</a></li>
+                        <li><a href="/zareen-portfolio">Zareen's Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!----hero Section start---->
 
     <div class="backdrop">
@@ -48,7 +67,7 @@
 
             <div class="content">
 
-                <h1>Aleena Tim</h1>
+                <h1>{{name}}</h1>
                 <h3>Computer Science student</h3>
                 <h4>MLH Production Engineer Summer 2022</h4>
 
