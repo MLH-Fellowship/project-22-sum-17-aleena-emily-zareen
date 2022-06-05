@@ -143,39 +143,39 @@
         "hobbies": "",
         "education": [
             {
-                "name": "Hunter College",
-                "major": "Computer Science",
+                "name": "McMaster Univeristy",
+                "major": "Engineering Physics",
                 "year": "Junior"
             }
         ],
         "work": [
             {
-                "title": "",
-                "company": "",
-                "start": "",
-                "end": "",
-                "description": ""
+                "title": "Teaching Assistant",
+                "company": "McMaster University Engineering Department",
+                "start": "August 2021",
+                "end": "May 2022",
+                "description": "Taught first year students Python, Auto-CAD and general engineering principles"
             },
             {
-                "title": "",
-                "company": "",
-                "start": "",
-                "end": "",
-                "description": ""
+                "title": "Student Researcher",
+                "company": "McMaster University",
+                "start": "October 2021",
+                "end": "May 2022",
+                "description": "Worked under Dr. Boyang Zhang to classify colon organoids using deep learning models to get insights into human physciology in comparison to animal models "
             }
         ],
         "projects": [
             {
-                "title": "",
-                "description": "",
-                "image": "",
+                "title": "Object Detection and Classification",
+                "description": "A Raspberry Pi based hardware build that utilizes Pan-Tilt HAT and camera system to detect and track objects. TensorFlowLite Used for object recognition.",
+                "image": "raspberrypi.jpg",
                 "link": ""
             },
             {
-                "title": "",
-                "description": "",
-                "image": "",
-                "link": ""
+                "title": "Towers of Hantow",
+                "description": "A visual representation of the Tower of Hantow Problem, created in C",
+                "image": "hantow-project.png",
+                "link": "https://github.com/zareentk/Tower-of-Hanoi"
             },
             {
                 "title": "",
@@ -187,19 +187,19 @@
         "social": [
             {
                 "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/aleenatim/"
+                "link": "https://www.linkedin.com/in/zareenkabir/"
             },
             {
                 "name": "GitHub",
-                "link": "https://github.com/AleenaTim"
+                "link": "https://github.com/zareentk"
             },
             {
                 "name": "Discord",
-                "link": "Aleena#1227"
+                "link": "Zareen#7780"
             },
             {
                 "name": "Email",
-                "link": "aleenatim@gmail.com"
+                "link": "zareenk@outlook.com"
             }
         ]
     }
