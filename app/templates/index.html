@@ -30,7 +30,7 @@
                 <div class="card">
                     <!--we are testing with base portfolio for now. click on any profile pic to test. Later, we will use this code to change it from base to indivual profiles such as aleena-portfolio -> <a href="/{{i.username}}-portfolio">-->
                         <script>console.log("{{i['username']}}")</script>
-                    <a href="/portfolio/{{i.username}}"><img src="./static/img/{{i.name.split()[0]}}.png"></a>
+                    <a href="/{{i.username}}-portfolio"><img src="./static/img/{{i.name.split()[0]}}.png"></a>
                     <h3>{{ i.name }}</h3>
                     <h5><span class="major_color">{{ i.education[0]['major']}}<br></span><span class="college_color">
                             @

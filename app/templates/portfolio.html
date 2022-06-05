@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<title>{% block title%}Yo{% endblock %}</title>
+<title>{% block title%}{% endblock %}</title>
 <link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
     <!----hero Section start---->
 
@@ -10,9 +10,7 @@
             <h2 class="logo"><a href="/">Meet The Team</a></h2>
 
             <div class="content">
-                <h1>Zareen Kabir</h1>
-                <h3>Engineering Physics student</h3>
-                <h4>MLH Production Engineer Summer 2022</h4>
+                {% block content2 %}{% endblock %}
             </div>
     </div>
 
