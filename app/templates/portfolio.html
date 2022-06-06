@@ -3,20 +3,28 @@
 {% block content %}
 <style>
     body {
-        background-color: #1d1d49;
+        background-color: #644741;
     }
 </style>
+<div class="table"></div>
 <title>{% block title %}{% endblock %}</title>
 <link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
 <!----hero Section start---->
 
-
+<div class="bookshelf">
+    <img src="./static/img/bookshelf.png" width="410px" height="450px">
+</div>
 <div class="window">
     <img src="./static/img/nycpixel.gif" width="410px" height="250px">
 </div>
-<div class="table"></div>
+<div class="windowpane">
+    <img src="./static/img/windowpane.png" width="430px" height="320px">
+</div>
+
 <div class="laptop">
     <img src="./static/img/laptop.png" width="610px" height="470px">
+    <div class="coffee"><img src="./static/img/coffee.gif" width="310px" height="250px"></div>
+    <div class="penguin"><img src="./static/img/penguinpet.png" width="310px" height="350px"></div>
     <div class="content">
         <p>{% block userInfo %}{% endblock %}</p>
         <h4>MLH Production Engineer Summer 2022</h4>
@@ -41,16 +49,16 @@
         </div>
     </div>
 </section>
+
 <!------work experience section------>
 <div class="work-experience">
     <div class="blog-card">
         <h2>Work Experience</h2>
         <input type="radio" name="select" id="tap-1" checked>
-        <input type="radio" name="select" id="tap-2">
+        <input type="radio" name="select" id="tap-2" checked>
         <input type="checkbox" id="imgTap">
         <div class="sliders-work">
-            <label for="tap-1" class="tap tap-1"></label>
-            <label for="tap-2" class="tap tap-2"></label>
+
         </div>
         <div class="inner-part">
             <label for="" class="img">
@@ -59,6 +67,7 @@
             <div class="contents content-1">
                 <span>{% block duration1 %}{% endblock %}</span>
                 <div class="title">{% block worktitle1 %}{% endblock %}</div>
+                <div class="subtitle">{% block company1 %}{% endblock %}</div>
                 <div class="text">{% block workdescription1 %}{% endblock %}</div>
             </div>
         </div>
@@ -75,44 +84,33 @@
     </div>
 </div>
 
-<!-----hobbies section start----------->
-<div class="hobbies">
-    <div class="title">
-        <h2>Hobbies</h2>
-    </div>
 
+
+<!-----projects section start----------->
+<div class="projects">
+    <div class="title">
+        <h2>Projects</h2>
+    </div>
     <div class="box">
         <div class="card">
-            <i class="fa fa-gamepad"></i>
-            <h5>{% block hobbytitle1 %}{% endblock %}</h5>
-            <div class="pra">
-                <h4>{% block hobbydescription1 %}{% endblock %}</p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
+                {% block projectimg1 %}{% endblock %}<div class="info"></div>
+            <div class="info">
+                <h1>{% block projecttitle1 %}{% endblock %}</h1>
+                <p>{% block projectdescription1 %}{% endblock %}</p>{% block projectlink1 %}{% endblock %}View Code</a></class>
             </div>
         </div>
-
         <div class="card">
-            <i class="far fa-user"></i>
-            <h5>{% block hobbytitle2 %}{% endblock %}</h5>
-            <div class="pra">
-                <p>{% block hobbydescription2 %}{% endblock %}</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
+            {% block projectimg2 %}{% endblock %}<div class="info"></div>
+            <div class="info">
+                <h1>{% block projecttitle2 %}{% endblock %}</h1>
+                <p>{% block projectdescription2 %}{% endblock %}</p>{% block projectlink2 %}{% endblock %}View Code</a></class>
             </div>
         </div>
-
         <div class="card">
-            <i class="far fa-bell"></i>
-            <h5>{% block hobbytitle3 %}{% endblock %}</h5>
-            <div class="pra">
-                <p>{% block hobbydescription3 %}{% endblock %}</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
+            {% block projectimg3 %}{% endblock %}<div class="info"></div>
+            <div class="info">
+                <h1>{% block projecttitle3 %}{% endblock %}</h1>
+                <p>{% block projectdescription3 %}{% endblock %}</p><class="button">{% block projectlink3 %}{% endblock %}View Code</a></class>
             </div>
         </div>
     </div>
@@ -122,17 +120,17 @@
 
 <!--map of visited places-->
 <div class="map">
+    <h2>Visited Places</h2>
     <div class="map-content">
-        <h2>Cool places I visited</h2>
         <div class="map-screen">
-            <iframe src="/zareen-map" height="500px" width="850px" title="Cool places I visited!"></iframe>
+            <iframe src="/zareen-map" height="500px" width="850px"></iframe>
         </div>
     </div>
 </div>
 <!------footer start--------->
 <footer>
     <p>{% block name %}{% endblock %}</p>
-    <p>connect with me!</p>
+    <p>Connect with me!</p>
     <div class="social">
         {% block linkedin %}{% endblock %}<i class="fab fa-linkedin"></i></a>
         {% block github %}{% endblock %}<i class="fab fa-github"></i></a>

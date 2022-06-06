@@ -3,7 +3,7 @@
         {
             "name": "Aleena Tim",
             "username": "aleena-tim",
-            "about": "I'm currently a junior Computer Science student studying at Hunter College in New York City. I am aspiring software engineer and during my free time, I like to play MOBA games and code new projects!",
+            "about": "My name is Aleena and I am currently a junior student studying Computer Science at Hunter College. I have always been most fascinated with the concept of computers and code because it represents the real-world simply through data. I am aspiring software engineer and during my free time, I like to play MOBA games and code up any creative project that comes to mind!",
             "image": "",
             "hobbies": "",
             "education": [
@@ -30,19 +30,19 @@
             "projects": [
                 {
                     "title": "IGN Video Playlist",
-                    "description": "(Developed a responsive, single-page video playlist app using JavaScript, CSS and HTML and pulling data from IGN API w/ Ajax. Video player includes custom stylized video controls and the playlist queue. Loads the first video in the playlist into the video element on initial page load. After each video finishes playback, the next video in the list is automatically played until the playlist is completed). Created response single-page video playlist with JS, CSS, HTML Connected to IGN public API using AJAX, displaying the latest videos, titles, description, tags and dates Coded customized video controls and automatic playback queue to complete each video in the playlist",
+                    "description": "Developed a responsive, single-page video playlist app that reads data from IGN API w/ Ajax. Video player includes custom stylized video controls and the playlist queue. Loads the first video in the playlist into the video element on initial page load. After each video finishes playback, the next video in the list is automatically played until the playlist is completed.",
                     "image": "../static/img/happy_plant.jpg",
                     "link": "https://video-playlist-aleena-tim.glitch.me/"
                 },
                 {
                     "title": "College Statistics Data App",
-                    "description": "Created a multi-page application to incorporate different data from each college in order to provide the best information for new students. The application is intended to be used by recent high school graduates or transfer students that want to view a list of college choices that best fits their needs. Developed a multi-page CUNY Statistics Web Scraping Data App with Anaconda, streamlit and Python Parsed important data (web scraping) from niche.com using pandas and BeautifulSoup onto a scatter plot and bar graph using matplot library Implemented filtering and sorting to retrieve specific information such as type of college, tuition, ranking, room and board, admission rate, SAT/ACT requirements, etc.",
+                    "description": "Created a multi-page application to incorporate different data from each college in order to provide the best information for new students. The application is intended to be used by recent high school graduates or transfer students that want to view a list of college choices that best fits their needs.",
                     "image": "../static/img/happy_plant.jpg",
                     "link": "https://cuny-data-app.herokuapp.com/"
                 },
                 {
                     "title": "Coronavirus Warehouse Website",
-                    "description": "Developed a fully-functional covid supply store website using PHP, SQL, CSS and HTML through a software engineering sequence of planning (basic functionality), system analysis (case diagram, data flow diagram), system design (entity relationship and mapping (E-R Diagram), data design, database design, GUI, data normalization fields w/ corresponding relational tables)  and working prototype. ",
+                    "description": "Developed a fully-functional covid supply store website using PHP, SQL, CSS and HTML.",
                     "image": "../static/img/happy_plant.jpg",
                     "link": "https://occss.herokuapp.com/"
                 }
