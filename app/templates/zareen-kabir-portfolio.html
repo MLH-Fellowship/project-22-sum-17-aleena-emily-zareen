@@ -1,1 +1,49 @@
+{% extends "portfolio.html" %}
 
+<title>{% block title%}Zareen's Portfolio{% endblock %}</title>
+<link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
+
+{% block userInfo %}
+<script>
+console.log(('{{ allUsers|tojson }}'))
+console.log(("{{ allUsers['students'][2]['work'][0]['duration'] }}"))
+console.log(("{{ allUsers['students'][2]['work'][0] }}"))
+</script>
+<h1>{{allUsers['students'][2]['name']}}</h1>
+<h3>{{allUsers['students'][2]['education'][0]['major']}}</h3>
+{% endblock %}
+
+<!--about section-->
+{% block about %}<p>{{allUsers['students'][2]['about']}}</p>{% endblock %}
+
+<!--work experience-->
+{% block workimg1 %}<img src="./static/img/work_scholarstem.jpg">{% endblock %}
+{% block workimg2 %}<img src="./static/img/work_witny.jpg">{% endblock %}
+{% block duration1 %}{{allUsers['students'][2]['work'][0]['duration']}}{% endblock %}
+{% block worktitle1 %}{{allUsers['students'][2]['work'][0]['title']}}{% endblock %}
+{% block company1 %}{{allUsers['students'][2]['work'][0]['company']}}{% endblock %}
+{% block workdescription1 %}{{allUsers['students'][2]['work'][0]['description']}}{% endblock %}
+
+{% block duration2 %}{{allUsers['students'][2]['work'][1]['duration']}}{% endblock %}
+{% block worktitle2 %}{{allUsers['students'][2]['work'][1]['title']}}{% endblock %}
+{% block company2 %}{{allUsers['students'][2]['work'][1]['company']}}{% endblock %}
+{% block workdescription2 %}{{allUsers['students'][2]['work'][1]['description']}}{% endblock %}
+
+<!--hobby experience-->
+{% block hobbytitle1 %}{% endblock %}
+{% block hobbydescription1 %}{% endblock %}
+{% block hobbytitle2 %}{% endblock %}
+{% block hobbydescription2 %}{% endblock %}
+{% block hobbytitle3 %}{% endblock %}
+{% block hobbydescription3 %}{% endblock %}
+
+<!--Name-->
+{% block name %}{{allUsers['students'][2]['name']}}{% endblock %}
+
+<!--Pictures-->
+{% block aboutmeimg %}<img src="./static/img/aleena2.jpg">{% endblock %}
+{% block img1 %}<img src="./static/img/aleena_aboutme.jpg">{% endblock %}
+{% block img2 %}<img src="./static/img/aleena_aboutme2.jpg">{% endblock %}
+{% block linkedin %}<a href="https://www.linkedin.com/in/zareenkabir/">{% endblock %}
+{% block github %}<a href="https://github.com/zareentk">{% endblock %}
+{% block gmail %}<a href="gmail.com">{% endblock %}
