@@ -19,17 +19,21 @@ def index():
 @app.route('/aleena-tim-portfolio')
 def aleena_portfolio():
     allUsers = data    
-    return render_template('aleena-tim-portfolio.html', title="Aleena", allUsers=allUsers)
+    return render_template('aleena-tim-portfolio.html', allUsers=allUsers)
 
 @app.route('/emily-lai-portfolio')
 def emily_portfolio():
     allUsers = data    
-    return render_template('emily-lai-portfolio.html', title="Emily", allUsers=allUsers)
+    return render_template('emily-lai-portfolio.html', allUsers=allUsers)
 
 @app.route('/zareen-kabir-portfolio')
 def zareen_portfolio():
     allUsers = data    
-    return render_template('zareen-kabir-portfolio.html', title="Zareen", allUsers=allUsers)
+    return render_template('zareen-kabir-portfolio.html', allUsers=allUsers)
+
+@app.route('/hobbies')
+def hobbies():    
+    return render_template('hobbies.html')
  
 if __name__ == "__main__":
     app.run(debug=True)

@@ -23,6 +23,13 @@ def emilymap():
         location=[21.018254, 8.457681],
         zoom_start=2
     )    
+    tooltip = "Click me!"
+    folium.Marker(
+    [52.509422,13.408891], popup="<b>Berlin, Germany</b>", tooltip=tooltip).add_to(map)
+    folium.Marker(
+    [46.406252, -63.351648], popup="<b>New Glasgow, Canada</b>", tooltip=tooltip).add_to(map)
+    folium.Marker(
+    [49.271674, -123.103113], popup="<b>Vancouver, Canada</b>", tooltip=tooltip).add_to(map)
     return map._repr_html_()
 
 @map_app.route("/zareen-map")

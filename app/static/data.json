@@ -135,8 +135,8 @@
         {
             "name": "Zareen Kabir",
             "username": "zareen-kabir",
-            "about": "I'm currently a Junior Computer Science student studying at Hunter College in New York City. I am aspiring software engineer and during my free time, I like to play MOBA games and code new projects!",
-            "image": "",
+            "about": "I'm currently a Junior Engineering Physics student at McMaster University. I am interested in electronic systems, software, and their relationship to real world physics. In my free time I like to go on hiking adventures!",
+            "image": "zareen2.jpg",
             "hobbies": "",
             "education": [
                 {
@@ -147,16 +147,16 @@
             ],
             "work": [
                 {
-                    "title": "Teaching Assistant",
-                    "company": "McMaster University Engineering Department",
-                    "duration": "August 2021 - May 2022",
-                    "description": "Taught first year students Python, Auto-CAD and general engineering principles"
-                },
-                {
                     "title": "Student Researcher",
                     "company": "McMaster University",
                     "duration": "October 2021 - May 2022",
                     "description": "Worked under Dr. Boyang Zhang to classify colon organoids using deep learning models to get insights into human physciology in comparison to animal models "
+                },
+                {
+                    "title": "Teaching Assistant",
+                    "company": "McMaster University Engineering Department",
+                    "duration": "August 2021 - May 2022",
+                    "description": "Lead students in projects and lab procedures to develop a thorough understanding of engineering principles, materials science, design, and programming skills."
                 }
             ],
             "projects": [
@@ -173,10 +173,10 @@
                     "link": "https://github.com/zareentk/Tower-of-Hanoi"
                 },
                 {
-                    "title": "",
-                    "description": "",
-                    "image": "",
-                    "link": ""
+                    "title": "Website Login System",
+                    "description": "A website login system in Python that utilizes a text file storing, retrieving, and verifying user credentials",
+                    "image": "websit_login.png",
+                    "link": "https://github.com/zareentk/Login-System"
                 }
             ],
             "social": [
