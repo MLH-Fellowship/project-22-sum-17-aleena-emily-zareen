@@ -1,203 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "portfolio.html" %}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./static/styles/menu.css">
-    <link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+<title>{% block title%}Aleena's Portfolio{% endblock %}</title>
+<link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% block userInfo %}
+<script>
+console.log(('{{ allUsers|tojson }}'))
+console.log(("{{ allUsers['students'][2]['work'][0]['duration'] }}"))
+console.log(("{{ allUsers['students'][2]['work'][0] }}"))
+</script>
+<h1>{{allUsers['students'][2]['name']}}</h1>
+<h3>{{allUsers['students'][2]['education'][0]['major']}}</h3>
+{% endblock %}
 
-</head>
+<!--about section-->
+{% block about %}<p>{{allUsers['students'][2]['about']}}</p>{% endblock %}
 
-<style>
-    body {
-        background-color: #38317b;
-    }
-</style>
-<div class="table"></div>
-<div class="window">
+<!--work experience-->
+{% block workimg1 %}<img src="./static/img/aiorganoid.png">{% endblock %}
+{% block workimg2 %}<img src="./static/img/eng1p13.png">{% endblock %}
+{% block duration1 %}{{allUsers['students'][2]['work'][0]['duration']}}{% endblock %}
+{% block worktitle1 %}{{allUsers['students'][2]['work'][0]['title']}}{% endblock %}
+{% block company1 %}{{allUsers['students'][2]['work'][0]['company']}}{% endblock %}
+{% block workdescription1 %}{{allUsers['students'][2]['work'][0]['description']}}{% endblock %}
 
-    <img src="./static/img/nycpixel.gif" width="410px" height="250px">
-</div>
-<div class="screen-outline"></div>
-<div class="screen">
-    <div class="screen-white"></div>
-</div>
-<div class="screen-stand"></div>
-<!DOCTYPE html>
-<html>
+{% block duration2 %}{{allUsers['students'][2]['work'][1]['duration']}}{% endblock %}
+{% block worktitle2 %}{{allUsers['students'][2]['work'][1]['title']}}{% endblock %}
+{% block company2 %}{{allUsers['students'][2]['work'][1]['company']}}{% endblock %}
+{% block workdescription2 %}{{allUsers['students'][2]['work'][1]['description']}}{% endblock %}
 
-<head>
-    <title>Zareen's Portfolio</title>
-</head>
+<!--hobby experience-->
+{% block hobbytitle1 %}{% endblock %}
+{% block hobbydescription1 %}{% endblock %}
+{% block hobbytitle2 %}{% endblock %}
+{% block hobbydescription2 %}{% endblock %}
+{% block hobbytitle3 %}{% endblock %}
+{% block hobbydescription3 %}{% endblock %}
 
-<body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="/">Homepage</a></li>
-                        <li><a href="/aleena-portfolio">Aleena's Portfolio</a></li>
-                        <li><a href="/emily-portfolio">Emily's Portfolio</a></li>
-                        <li><a href="/zareen-portfolio">Zareen's Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--project experience-->
+{% block projectimg1 %}<img src="./static/img/raspberrypi.jpg">{% endblock %}
+{% block projecttitle1 %}{{allUsers['students'][2]['projects'][0]['title']}}{% endblock %}
+{% block projectdescription1 %}{{allUsers['students'][2]['projects'][0]['description']}}{% endblock %}
+{% block projectlink1 %}<a href="https://video-playlist-aleena-tim.glitch.me/">{% endblock %}
+{% block projectimg2 %}<img src="./static/img/hantow-project.png">{% endblock %}
+{% block projecttitle2 %}{{allUsers['students'][2]['projects'][1]['title']}}{% endblock %}
+{% block projectdescription2 %}{{allUsers['students'][2]['projects'][1]['description']}}{% endblock %}
+{% block projectlink2 %}<a href="https://github.com/zareentk/Tower-of-Hanoi">{% endblock %}
+{% block projectimg3 %}<img src="./static/img/website_login.png">{% endblock %}
+{% block projecttitle3 %}{{allUsers['students'][2]['projects'][2]['title']}}{% endblock %}
+{% block projectdescription3 %}{{allUsers['students'][2]['projects'][2]['description']}}{% endblock %}
+{% block projectlink3 %}<a href="https://github.com/zareentk/Login-System">{% endblock %}
 
-    <!----hero Section start---->
+<!--Name-->
+{% block name %}{{allUsers['students'][2]['name']}}{% endblock %}
 
-    <div class="backdrop">
-        <nav>
-            <h2 class="logo"><a href="/">Meet The Team</a></h2>
+<!--Pictures-->
+{% block aboutmeimg %}<img src="./static/img/zareen2.jpg">{% endblock %}
+{% block img1 %}<img src="./static/img/aleena_aboutme.jpg">{% endblock %}
+{% block img2 %}<img src="./static/img/aleena_aboutme2.jpg">{% endblock %}
+{% block linkedin %}<a href="https://www.linkedin.com/in/zareenkabir/">{% endblock %}
+{% block github %}<a href="https://github.com/zareentk">{% endblock %}
+{% block gmail %}<a href="gmail.com">{% endblock %}
 
-            <div class="content">
-                <h1>Zareen Kabir</h1>
-                <h3>Engineering Physics student</h3>
-                <h4>MLH Production Engineer Summer 2022</h4>
-            </div>
-    </div>
-
-
-    <!----About section start---->
-    <section class="about">
-        <div class="main">
-            <img src="img/main-img.png">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <!--<h5>Developer <span>& Designer</span></h5>-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-    </section>
-    <!------work experience section------>
-    <div class="work-experience">
-        <p>Work Experience</p>
-        <div class="blog-card">
-            <input type="radio" name="select" id="tap-1" checked>
-            <img class="img-1" src="#">
-            <input type="radio" name="select" id="tap-2">
-            <input type="checkbox" id="imgTap">
-            <div class="sliders-work">
-                <label for="tap-1" class="tap tap-1"></label>
-                <label for="tap-2" class="tap tap-2"></label>
-     
-            </div>
-            <div class="inner-part">
-                <label for="" class ="img">
-                    <img src="./static/img/zareen.png">
-                </label>
-                <div class="contents content-1">
-                    <span>21 January 2017 - 26 December 2017</span>
-                    <div class="title">>Lorem ipsum dolor</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                </div>
-            </div>
-            <div class="inner-part">
-                <label for="" class ="img">
-                    <img src="./static/img/logo.jpg">
-                </label>
-                <div class="contents content-2">
-                    <span>26 December 2016</span>
-                    <div class="title">>Lorem ipsum dolor</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-----hobbies section start----------->
-    <div class="hobbies">
-        <div class="title">
-            <h2>Hobbies</h2>
-        </div>
-
-        <div class="box">
-            <div class="card">
-                <i class="fa fa-gamepad"></i>
-                <h5>Gaming</h5>
-                <div class="pra">
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <i class="far fa-user"></i>
-                <h5>Insert Hobby Here</h5>
-                <div class="pra">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <i class="far fa-bell"></i>
-                <h5>Insert Hobby Here</h5>
-                <div class="pra">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--current/previous education section-->
-    
-    
-    <!--map of visited places-->
-    <div class="map-content">
-        <h1>Cool places I visted</h1>
-        <div class="map-screen">
-            <iframe src="/zareen-map" height="500" width="1000" title="Cool places I visted!" ></iframe>
-        </div>
-    </div>
-
-    <!------footer start--------->
-    <footer>
-        <p>Zareen Kabir</p>
-        <p>connect with me!</p>
-        <div class="social">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
-        </div>
-    </footer>
-    <!--
-    <div class="email">
-        <form>
-            <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-            <input type="submit" name="submit" value="Confirm">
-        </form>
-    </div>-->
-</body>
-
-</html>
-
-
-
-<body></body>
+<!--Map-->
+{% block userMap %}/zareen-map{% endblock %}

@@ -14,7 +14,7 @@ data = json.load(dataFile)
 @app.route('/')
 def index():    
     allUsers = data    
-    return render_template('index.html', title="Home", allUsers=allUsers)
+    return render_template('index.html', title="Homepage", allUsers=allUsers)
 
 @app.route('/aleena-tim-portfolio')
 def aleena_portfolio():
