@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<title>{% block title%}Home{% endblock %}</title>
+
+<link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+</head>
+<!--Madagascar penguin gifs slideshow-->
+<div class="slider">
+    <img src="./static/img/1.gif" class="slide-1">
+    <img src="./static/img/2.gif" class="slide-2">
+    <img src="./static/img/3.gif" class="slide-3">
+    <img src="./static/img/4.gif" class="slide-4">
+    <h6>Meet the</h6>
+    <h1>Pipelining Penguins</h1>
+    <h4>Team 1</h4>
+</div>
+
+<body>
+    <div class="container">
+        <div class="about">
+            <div class="title">
+                <h2>Meet the Team!</h2>
+            </div>
+            <div class="box">
+                {% for i in allUsers.students %}
+                <div class="card">
+                    <a href="/{{i.username}}-portfolio"><img src="./static/img/{{i.name.split()[0]}}.png"></a>
+                    <h3>{{ i.name }}</h3>
+                    <h5><span class="major_color">{{ i.education[0]['major']}}<br></span><span class="college_color">
+                            @
+                            {{ i.education[0]['name']}}</span></h5>
+                    <div class="pra">
+                        <p style="text-align: center;">
+                            <a class="button" href="/{{i.username}}-portfolio">View Profile</a>
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
