@@ -8,7 +8,15 @@ def aleenamap():
         location=[21.018254, 8.457681],
         zoom_start=2
     )
+    tooltip = "Click me!"
+    folium.Marker(
+    [34.052235,-118.243683], popup="<b>Los Angeles, California</b>", tooltip=tooltip).add_to(map)
+    folium.Marker(
+    [43.534321, -80.243683], popup="<b>Niagara Falls, Canada</b>", tooltip=tooltip).add_to(map)
+    folium.Marker(
+    [11.9344, -84.9560], popup="<b>Granada, Nicaragua</b>", tooltip=tooltip).add_to(map)
     return map._repr_html_()
+
 @map_app.route("/emily-map")
 def emilymap():
     map = folium.Map(
@@ -25,7 +33,7 @@ def zareenmap():
     )
     tooltip = "Click me!"
     folium.Marker(
-    [45.3288, -121.6625], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map)
+    [48.8633611,2.3551446], popup="<b>Paris, France</b>", tooltip=tooltip).add_to(map)
     folium.Marker(
-    [45.3311, -121.7113], popup="<b>Timberline Lodge</b>", tooltip=tooltip).add_to(map)
+    [28.520723, 84.038404], popup="<b>Himalayas, Nepal</b>", tooltip=tooltip).add_to(map)
     return map._repr_html_()
