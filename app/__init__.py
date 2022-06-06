@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 app = Flask(__name__)
 app.register_blueprint(map_app)
-dataFile = open("C:/Users/aleen/Desktop/project-22-sum-17-aleena-emily-zareen/app/static/data.json" , encoding = "mbcs")
+dataFile = open("app\static\data.json" , encoding = "mbcs")
 
 data = json.load(dataFile)
 
@@ -19,25 +19,21 @@ def index():
 @app.route('/aleena-tim-portfolio')
 def aleena_portfolio():
     allUsers = data    
-    return render_template('aleena-tim-portfolio.html', title="Aleena", allUsers=allUsers)
+    return render_template('aleena-tim-portfolio.html', allUsers=allUsers)
 
-@app.route('/portfolio/emily-portfolio')
+@app.route('/emily-lai-portfolio')
 def emily_portfolio():
     allUsers = data    
-    return render_template('emily-portfolio.html', title="Emily", allUsers=allUsers)
+    return render_template('emily-lai-portfolio.html', allUsers=allUsers)
 
-@app.route('/portfolio/zareen-portfolio')
+@app.route('/zareen-kabir-portfolio')
 def zareen_portfolio():
     allUsers = data    
-    return render_template('zareen-portfolio.html', title="Zareen", allUsers=allUsers)
+    return render_template('zareen-kabir-portfolio.html', allUsers=allUsers)
 
-#@app.route('/emily-portfolio')
-#def emily_portfolio_page():
-#    return render_template('emily-portfolio.html', title="Emily's Portfolio", url=os.getenv("URL"), author="Emily")
-
-#@app.route('/zareen-portfolio')
-#def zareen_portfolio_page():
-#    return render_template('zareen-portfolio.html', title="Zareen's Portfolio", url=os.getenv("URL"), author="Zareen")
-    
+@app.route('/hobbies')
+def hobbies():    
+    return render_template('hobbies.html')
+ 
 if __name__ == "__main__":
     app.run(debug=True)

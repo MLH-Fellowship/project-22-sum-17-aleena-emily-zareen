@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block content %}
+<title>{% block title%}Home{% endblock %}</title>
 
 <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
 </head>
@@ -20,16 +22,9 @@
             <div class="title">
                 <h2>Meet the Team!</h2>
             </div>
-            <script>
-                console.log(('{{ allUsers|tojson }}'))
-                console.log(("{{ allUsers['students'][1]['name'] }}"))
-                console.log(("{{ allUsers['students'][0]['education'][0]['name'] }}"))
-            </script>
             <div class="box">
                 {% for i in allUsers.students %}
                 <div class="card">
-                    <!--we are testing with base portfolio for now. click on any profile pic to test. Later, we will use this code to change it from base to indivual profiles such as aleena-portfolio -> <a href="/{{i.username}}-portfolio">-->
-                        <script>console.log("{{i['username']}}")</script>
                     <a href="/{{i.username}}-portfolio"><img src="./static/img/{{i.name.split()[0]}}.png"></a>
                     <h3>{{ i.name }}</h3>
                     <h5><span class="major_color">{{ i.education[0]['major']}}<br></span><span class="college_color">
@@ -37,7 +32,7 @@
                             {{ i.education[0]['name']}}</span></h5>
                     <div class="pra">
                         <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
+                            <a class="button" href="/{{i.username}}-portfolio">View Profile</a>
                         </p>
                     </div>
                 </div>
@@ -45,5 +40,6 @@
 
             </div>
         </div>
-      </body>
-  </html>
+    </div>
+</body>
+{% endblock %}
