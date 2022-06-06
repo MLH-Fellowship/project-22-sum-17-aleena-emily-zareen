@@ -1,11 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<style>
-    body {
-        background-color: #644741;
-    }
-</style>
 <div class="table"></div>
 <title>{% block title %}{% endblock %}</title>
 <link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
@@ -78,6 +73,7 @@
             <div class="contents content-2">
                 <span>{% block duration2 %}{% endblock %}</span>
                 <div class="title">{% block worktitle2 %}{% endblock %}</div>
+                <div class="subtitle">{% block company2 %}{% endblock %}</div>
                 <div class="text">{% block workdescription2 %}{% endblock %}</div>
             </div>
         </div>
@@ -96,27 +92,25 @@
                 {% block projectimg1 %}{% endblock %}<div class="info"></div>
             <div class="info">
                 <h1>{% block projecttitle1 %}{% endblock %}</h1>
-                <p>{% block projectdescription1 %}{% endblock %}</p>{% block projectlink1 %}{% endblock %}View Code</a></class>
+                <p>{% block projectdescription1 %}{% endblock %}</p>{% block projectlink1 %}{% endblock %}<button>View Code</button></a></class>
             </div>
         </div>
         <div class="card">
             {% block projectimg2 %}{% endblock %}<div class="info"></div>
             <div class="info">
                 <h1>{% block projecttitle2 %}{% endblock %}</h1>
-                <p>{% block projectdescription2 %}{% endblock %}</p>{% block projectlink2 %}{% endblock %}View Code</a></class>
+                <p>{% block projectdescription2 %}{% endblock %}</p>{% block projectlink2 %}{% endblock %}<button>View Code</button></a></class>
             </div>
         </div>
         <div class="card">
             {% block projectimg3 %}{% endblock %}<div class="info"></div>
             <div class="info">
                 <h1>{% block projecttitle3 %}{% endblock %}</h1>
-                <p>{% block projectdescription3 %}{% endblock %}</p><class="button">{% block projectlink3 %}{% endblock %}View Code</a></class>
+                <p>{% block projectdescription3 %}{% endblock %}</p><class="button">{% block projectlink3 %}{% endblock %}<button>View Code</button></a></class>
             </div>
         </div>
     </div>
 </div>
-<!--current/previous education section-->
-
 
 <!--map of visited places-->
 <div class="map">

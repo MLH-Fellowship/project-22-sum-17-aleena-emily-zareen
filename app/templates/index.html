@@ -22,11 +22,6 @@
             <div class="title">
                 <h2>Meet the Team!</h2>
             </div>
-            <script>
-                console.log(('{{ allUsers|tojson }}'))
-                console.log(("{{ allUsers['students'][1]['name'] }}"))
-                console.log(("{{ allUsers['students'][0]['education'][0]['name'] }}"))
-            </script>
             <div class="box">
                 {% for i in allUsers.students %}
                 <div class="card">
