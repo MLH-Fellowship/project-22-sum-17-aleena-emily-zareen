@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     font-family:'Courier New', Courier, monospace;
+    color: #9bd4d3;
 
 }
 .scene{
@@ -16,58 +17,18 @@
     top: 595px;
     height: 20%;
     width: 100%;
-    background-color: rgb(97, 84, 76);
+    background-color: #644741;
     
 }
-
-.screen-stand {
-    width: 0;
-    height: 0;
-    top: 200px;
-    left: 450px;
-    background-color: rgb(18, 18, 18);
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-   
-}
-
-.screen {
-    border-radius: 3%;
+.laptop {
     position: absolute;
-    top: 200px;
-    left: 450px;
-    height: 40%;
-    width: 35%;
-    background-color: rgb(18, 18, 18);
-    
+    top: 250px;
+    right: 510px;
 }
-
-.screen-outline {
-    border-radius: 3%;
-    position: absolute;
-    top: 195px;
-    left: 455px;
-    height: 40.2%;
-    width: 34.9%;
-    background-color: rgb(30, 83, 255);
-    
-}
-
-.screen-white {
-    position: absolute;
-    top: 23px;
-    left: 23px;
-    height: 85%;
-    width: 92%;
-    background-color: rgb(255, 255, 255);
-    
-}
-
 .window {
     position: absolute;
     top: 150px;
     right: 150px;
-   
 }
 
 .work-experience {
@@ -173,16 +134,16 @@ nav ul li a:hover {
 
 .content {
     position: absolute;
-    top: 46%;
-    left: 34%;
+    top: 28%;
+    left: 20%;
     transform: translateY(-50%);
 }
 
 h1 {
-  
-    color: rgb(21, 20, 72);
+    font-family: monospace;
+    color: darkblue;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 55px;
     
 }
 
@@ -242,7 +203,12 @@ h4 {
 }
 
 .about-text {
-    width: 550px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
 }
 
 .main {
@@ -297,14 +263,27 @@ button:hover {
 .hobbies {
     background: #191919;
     width: 100%;
-    padding: 100px 0px;
-   
+    padding: 100px 0px; 
 }
-
+.map {
+    background: #101010;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px;  
+}
+.map h2{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+}
 .title h2 {
     color: white;
     font-size: 75px;
-    width: 1130px;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -388,9 +367,15 @@ h5 {
     margin-bottom: 25px;
 }
 .work-experience h2 {
-    color: rgb(0, 213, 255);
-    font-size: 15px;
-    font-weight: bold;
+    color: black;
+    padding-top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 65px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
 }
 .work-experience .button-two {
     background-color: #f9004d;
@@ -412,8 +397,8 @@ h5 {
 footer {
     position: relative;
     width: 100%;
-    height: 400px;
-    background: #101010;
+    height: 250px;
+    background: #191919;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,7 +423,7 @@ footer p:nth-child(2) {
     position: absolute;
     height: 560px;
     width: 95%;
-    max-width: 1550px;
+    max-width: 1350px;
     margin: auto; 
     background: white;
     border-radius: 25px;
@@ -476,8 +461,13 @@ footer p:nth-child(2) {
     transition-delay: .2s;
 }
 .contents{
-    padding: 0 20px 0 35px;
-    width: 530px;
+    width: 100%;
+    margin-left: 50px;
+    opacity: 0;
+    transition: .6s;
+}
+.contents .content-1{
+    width: 100%;
     margin-left: 50px;
     opacity: 0;
     transition: .6s;
@@ -486,7 +476,6 @@ footer p:nth-child(2) {
 #tap-2:checked ~ .inner-part .content-2{
     opacity: 1;
     margin-left: 50px;
-    z-index: 100;
     transition-delay: .3s;
 }
 .contents span{
@@ -512,7 +501,6 @@ footer p:nth-child(2) {
     position: absolute;
     bottom: 25px;
     left: 65%;
-    z-index: 100;
     transform: translateX(-50%);
 
 }
@@ -545,8 +533,16 @@ footer p:nth-child(2) {
     transform: scaleX(1);
     width: 100%;
 }
-input{
-    display: none;
+input {
+    width: 0%;
+    height: 0%;
+    opacity: 0%;
+}
+.map-content{
+    align-content: center;
+    align-items: center;
+    justify-content: center;   
+
 }
 .social {
     display: flex;

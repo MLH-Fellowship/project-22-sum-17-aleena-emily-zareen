@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #1d1d49;
+    }
+</style>
+<title>{% block title %}{% endblock %}</title>
+<link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
+<!----hero Section start---->
+
+
+<div class="window">
+    <img src="./static/img/nycpixel.gif" width="410px" height="250px">
+</div>
+<div class="table"></div>
+<div class="laptop">
+    <img src="./static/img/laptop.png" width="610px" height="470px">
+    <div class="content">
+        <p>{% block userInfo %}{% endblock %}</p>
+        <h4>MLH Production Engineer Summer 2022</h4>
+    </div>
+</div>
+
+<div class="backdrop">
+    <nav>
+        <h2 class="logo"><a href="/">HOME</a></h2>
+
+
+</div>
+
+
+<!----About section start---->
+<section class="about">
+    <div class="main">
+        {% block aboutmeimg %}{% endblock %}
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>{% block about %}{% endblock %}</p>
+        </div>
+    </div>
+</section>
+<!------work experience section------>
+<div class="work-experience">
+    <div class="blog-card">
+        <h2>Work Experience</h2>
+        <input type="radio" name="select" id="tap-1" checked>
+        <input type="radio" name="select" id="tap-2">
+        <input type="checkbox" id="imgTap">
+        <div class="sliders-work">
+            <label for="tap-1" class="tap tap-1"></label>
+            <label for="tap-2" class="tap tap-2"></label>
+        </div>
+        <div class="inner-part">
+            <label for="" class="img">
+                {% block workimg1 %}{% endblock %}
+            </label>
+            <div class="contents content-1">
+                <span>{% block duration1 %}{% endblock %}</span>
+                <div class="title">{% block worktitle1 %}{% endblock %}</div>
+                <div class="text">{% block workdescription1 %}{% endblock %}</div>
+            </div>
+        </div>
+        <div class="inner-part">
+            <label for="" class="img">
+                {% block workimg2 %}{% endblock %}
+            </label>
+            <div class="contents content-2">
+                <span>{% block duration2 %}{% endblock %}</span>
+                <div class="title">{% block worktitle2 %}{% endblock %}</div>
+                <div class="text">{% block workdescription2 %}{% endblock %}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----hobbies section start----------->
+<div class="hobbies">
+    <div class="title">
+        <h2>Hobbies</h2>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <i class="fa fa-gamepad"></i>
+            <h5>{% block hobbytitle1 %}{% endblock %}</h5>
+            <div class="pra">
+                <h4>{% block hobbydescription1 %}{% endblock %}</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="far fa-user"></i>
+            <h5>{% block hobbytitle2 %}{% endblock %}</h5>
+            <div class="pra">
+                <p>{% block hobbydescription2 %}{% endblock %}</p>
+                <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="far fa-bell"></i>
+            <h5>{% block hobbytitle3 %}{% endblock %}</h5>
+            <div class="pra">
+                <p>{% block hobbydescription3 %}{% endblock %}</p>
+                <p style="text-align: center;">
+                    <a class="button" href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--current/previous education section-->
+
+
+<!--map of visited places-->
+<div class="map">
+    <div class="map-content">
+        <h2>Cool places I visited</h2>
+        <div class="map-screen">
+            <iframe src="/zareen-map" height="500px" width="850px" title="Cool places I visited!"></iframe>
+        </div>
+    </div>
+</div>
+<!------footer start--------->
+<footer>
+    <p>{% block name %}{% endblock %}</p>
+    <p>connect with me!</p>
+    <div class="social">
+        {% block linkedin %}{% endblock %}<i class="fab fa-linkedin"></i></a>
+        {% block github %}{% endblock %}<i class="fab fa-github"></i></a>
+        {% block gmail %}{% endblock %}<i class="fab fa-google"></i></a>
+    </div>
+    </div>
+</footer>
+</body>
+{% endblock %}
