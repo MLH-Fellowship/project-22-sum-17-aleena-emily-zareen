@@ -2,9 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #9bd4d3;
 
+}
+body {
+    background-color:  #DBE3E5;
 }
 .scene{
     display: flex;
@@ -17,71 +20,30 @@
     top: 595px;
     height: 20%;
     width: 100%;
-    background-color: #88bdbc;
+    background-color: 	#a39580;
     
 }
-
-.screen-stand {
-    width: 0;
-    height: 0;
-    top: 200px;
-    left: 450px;
-    background-color: rgb(18, 18, 18);
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-   
-}
-
-.screen {
-    border-radius: 3%;
+.laptop {
     position: absolute;
-    top: 200px;
-    left: 450px;
-    height: 40%;
-    width: 35%;
-    background-color: rgb(18, 18, 18);
-    
+    top: 250px;
+    right: 510px;
 }
-
-.screen-outline {
-    border-radius: 3%;
-    position: absolute;
-    top: 195px;
-    left: 455px;
-    height: 40.2%;
-    width: 34.9%;
-    background-color: rgb(245, 224, 130);
-    
-}
-
-.screen-white {
-    position: absolute;
-    top: 23px;
-    left: 23px;
-    height: 85%;
-    width: 92%;
-    background-color:#F3EEF0;
-    
-}
-
 .window {
     position: absolute;
     top: 150px;
     right: 150px;
-   
 }
 
 .work-experience {
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: red;
 }
 
 * {
     padding: 0;
     margin: 0;
-
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
     box-sizing: border-box;
 }
 
@@ -104,7 +66,7 @@ nav {
 
 .logo {
     text-decoration: none;
-    color: #D0894B;
+    color: #000000;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -113,19 +75,19 @@ nav {
 
 a:link {
     text-decoration: none;
-    color: #D0894B;
+    color: #000000;
     transition: 1s;
 }
 
 a:visited {
     text-decoration: none;
-    color: #D0894B;
+    color: #000000;
     transition: 1s;
 }
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: gray;
     transition: 1s;
 }
 
@@ -174,8 +136,8 @@ nav ul li a:hover {
 
 .content {
     position: absolute;
-    top: 46%;
-    left: 34%;
+    top: 28%;
+    left: 20%;
     transform: translateY(-50%);
 }
 
@@ -183,7 +145,7 @@ h1 {
   
     color:  #253542;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: 55px;
     
 }
 
@@ -234,7 +196,7 @@ h4 {
 .about {
     width: 100%;
     padding: 100px 0px;
-    background-color: #4C4B63;
+    background-color: #202642;
 }
 
 .about img {
@@ -243,7 +205,12 @@ h4 {
 }
 
 .about-text {
-    width: 550px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
 }
 
 .main {
@@ -260,22 +227,25 @@ h4 {
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    align-self: center;
 }
 
 .about-text h5 {
     color: white;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 40px;
     margin-bottom: 25px;
     text-transform: capitalize;
+    text-align: justify;
 }
 
 .about-text p {
-    color: #fcfc;
+    color: white;
     letter-spacing: 1px;
     line-height: 28px;
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 45px;
+    text-align: justify;
 }
 
 button {
@@ -296,16 +266,30 @@ button:hover {
 }
 
 .hobbies {
-    background: #191919;
+    background: #DBE3E5;
     width: 100%;
     padding: 100px 0px;
    
 }
-
-.title h2 {
+.map {
+    background: #40798C;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px;  
+}
+.map h2{
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 75px;
-    width: 1130px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+}
+.title h2 {
+    color: black;
+    font-size: 75px;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -314,7 +298,7 @@ button:hover {
 }
 
 h5 {
-    color: white;
+    color: black;
     font-size: 23px;
     margin-bottom: 15px;
 }
@@ -329,7 +313,7 @@ h5 {
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #2f2f2f;
+    background: #202642;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -371,10 +355,11 @@ h5 {
     cursor: pointer;
 }
 
+
 .work-experience {
     width: 100%;
-    height: 740px;
-    background: #101010;
+    height: 780px;
+    background:  #DBE3E5;
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -383,15 +368,16 @@ h5 {
 }
 
 .work-experience p {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 .work-experience h2 {
-    color: rgb(0, 213, 255);
-    font-size: 15px;
+    color: #D9B45D;
+    font-size: 65px;
     font-weight: bold;
+    padding: 100px;
 }
 .work-experience .button-two {
     background-color: #D9B45D;
@@ -399,7 +385,7 @@ h5 {
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px;
+    padding: 100px 30px;
     border-radius: 30px;
     transition: .4s;
 }
@@ -409,12 +395,11 @@ h5 {
     border: 2px solid #D9B45D;
     cursor: pointer;
 }
-
 footer {
     position: relative;
     width: 100%;
-    height: 400px;
-    background: #101010;
+    height: 250px;
+    background:#202642;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,104 +422,125 @@ footer p:nth-child(2) {
 }
 .blog-card{
     position: absolute;
-    height: 560px;
+    height: 370px;
+    padding: 70px;
     width: 95%;
     max-width: 1350px;
-    margin: auto; 
+    min-height: 500px;
+    margin-top: 150px;
+    border-radius: 55px;
     background: white;
-    border-radius: 25px;
-    box-shadow: 0 10px 50px rgba(30, 0, 106, 0.8);
-    align-self:flex-end;
-}
-.blog-card .inner-part{
-    display: flex;
-    align-items: left;
-    width: 1000px;
-    padding: 100px;
-    height: 500px;
+    box-shadow: 0px 10px 50px #D9B45D;
+    align-content: right;
+    align-items: right;
+    align-self: right;
+  }
+  .inner-part{
     position: absolute;
-}
-.inner-part .img   {
+    display: flex;
+    height: 360px;
+    align-items: center;
+    justify-content: right;
+    padding: 0 25px;
+  }
+  #imgTap:checked ~ .inner-part {
+    padding: 0;
+    transition: .1s ease-in;
+  }
+  .inner-part .img{
     height: 260px;
     width: 260px;
-    overflow: hidden;
     flex-shrink: 0;
+    overflow: hidden;
     border-radius: 20px;
-    box-shadow: 2px 3px 15px rgba(252, 56, 56,0.4);
-}
-
-.img img{
+    box-shadow: 2px 3px 15px rgba(252,56,56,.1);
+  }
+  #imgTap:checked ~ .inner-part .img{
+    height: 370px;
+    width: 850px;
+    z-index: 99;
+    margin-top: 10px;
+    transition: .3s .2s ease-in;
+  }
+  .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     cursor: pointer;
-    opacity: 0;
+    opacity: 1;
     transition: .6s;
-}
-#tap-1:checked ~ .inner-part .img-1,
-#tap-2:checked ~ .inner-part .img-2{
+  }
+  #tap-1:checked ~ .inner-part .img-1,
+  #tap-2:checked ~ .inner-part .img-2{
     opacity: 1;
     transition-delay: .2s;
-}
-.contents{
+  }
+  .contents{
     padding: 0 20px 0 35px;
     width: 530px;
     margin-left: 50px;
     opacity: 0;
     transition: .6s;
-}
-.contents .content-1{
-    padding: 0 20px 0 35px;
-    width: 530px;
-    margin-left: 50px;
-    opacity: 0;
-    transition: .6s;
-}
-#tap-1:checked ~ .inner-part .content-1,
-#tap-2:checked ~ .inner-part .content-2{
+  }
+  #imgTap:checked ~ .inner-part .content{
+    display: none;
+  }
+  #tap-1:checked ~ .inner-part .content-1,
+  #tap-2:checked ~ .inner-part .content-2{
     opacity: 1;
-    margin-left: 50px;
+    margin-left: 0px;
     z-index: 100;
     transition-delay: .3s;
-}
-.contents span{
+  }
+  .contents span{
     display: block;
+    color: #7b7992;
     margin-bottom: 15px;
     font-size: 22px;
-    font-weight: bold;
-
-}
-.contents .title{
+    font-weight: 500;
+    margin-left: 100px;
+  }
+  .contents .title{
     font-size: 30px;
     font-weight: 700;
-    color: #000;
-}
-.contents .text{
+    color: #0d0925;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  .contents .text{
+    color: #4e4a67;
     font-size: 19px;
-    color: #444a67;
     margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: -100px;
     line-height: 1.5em;
     text-align: justify;
-}
-.sliders-work{
+  }
+
+  .sliders-work{
     position: absolute;
     bottom: 25px;
     left: 65%;
-    z-index: 100;
     transform: translateX(-50%);
-
-}
-.sliders-work .tap{
+    z-index: 12;
+  }
+  #imgTap:checked ~ .sliders-work{
+    display: none;
+  }
+  .sliders-work .tap{
     position: relative;
     height: 10px;
     width: 50px;
     background: #d9d9d9;
-    display: inline-flex;
     border-radius: 5px;
+    display: inline-flex;
     margin: 0 3px;
     cursor: pointer;
-}
-.sliders-work .tap:before{
+  }
+  .sliders-work .tap:hover{
+    background: #cccccc;
+  }
+  .sliders-work .tap:before{
     position: absolute;
     content: '';
     top: 0;
@@ -544,19 +550,20 @@ footer p:nth-child(2) {
     background: #D9B45D;
     border-radius: 10px;
     transform: scaleX(0);
-    transition: transform 0.6s;
+    transition: transform .6s;
     transform-origin: left;
-}
+  }
 
-#tap-1:checked ~ .sliders-work .tap-1:before,
-#tap-2:checked ~ .sliders-work .tap-2:before{
+  #tap-1:checked ~ .sliders-work .tap-1:before,
+  #tap-2:checked ~ .sliders-work .tap-2:before{
     transform: scaleX(1);
     width: 100%;
-}
-input {
-    width: 0%;
-    height: 0%;
-}
+  }
+  input[type="radio"],
+  input[type="checkbox"]{
+    width: 0;
+    height: 0;
+  }
 .map-content{
     align-content: center;
     align-items: center;
@@ -585,6 +592,7 @@ input {
     transform: scale(1.3);
     transition: .3s;
 }
+
 
 .end {
     position: absolute;
