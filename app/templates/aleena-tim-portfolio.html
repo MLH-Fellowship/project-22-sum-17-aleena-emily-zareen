@@ -37,6 +37,20 @@ console.log(("{{ allUsers['students'][0]['work'][0] }}"))
 {% block hobbytitle3 %}{% endblock %}
 {% block hobbydescription3 %}{% endblock %}
 
+<!--project experience-->
+{% block projectimg1 %}<img src="./static/img/aleenaproject1.png">{% endblock %}
+{% block projecttitle1 %}{{allUsers['students'][0]['projects'][0]['title']}}{% endblock %}
+{% block projectdescription1 %}{{allUsers['students'][0]['projects'][0]['description']}}{% endblock %}
+{% block projectlink1 %}<a href="https://video-playlist-aleena-tim.glitch.me/">{% endblock %}
+{% block projectimg2 %}<img src="./static/img/aleenaproject2.png">{% endblock %}
+{% block projecttitle2 %}{{allUsers['students'][0]['projects'][1]['title']}}{% endblock %}
+{% block projectdescription2 %}{{allUsers['students'][0]['projects'][1]['description']}}{% endblock %}
+{% block projectlink2 %}<a href="https://cuny-data-app.herokuapp.com/">{% endblock %}
+{% block projectimg3 %}<img src="./static/img/aleenaproject3.png">{% endblock %}
+{% block projecttitle3 %}{{allUsers['students'][0]['projects'][2]['title']}}{% endblock %}
+{% block projectdescription3 %}{{allUsers['students'][0]['projects'][2]['description']}}{% endblock %}
+{% block projectlink3 %}<a href="https://cuny-data-app.herokuapp.com/">{% endblock %}
+
 <!--Name-->
 {% block name %}{{allUsers['students'][0]['name']}}{% endblock %}
 
@@ -47,3 +61,6 @@ console.log(("{{ allUsers['students'][0]['work'][0] }}"))
 {% block linkedin %}<a href="https://www.linkedin.com/in/aleenatim/">{% endblock %}
 {% block github %}<a href="https://github.com/AleenaTim">{% endblock %}
 {% block gmail %}<a href="gmail.com">{% endblock %}
+
+<!--Map-->
+{% block userMap %}/aleena-map{% endblock %}
