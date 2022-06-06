@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+<title>{{authorFirstName}}'s Portfolio</title>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
-    <link rel="stylesheet" href="./static/styles/menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="./static/styles/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,25 +24,22 @@
 
 <style>
     body {
-        background-color: #38317b;
+        background-color: #1e2e47;
     }
 </style>
-<div class="table"></div>
-<div class="window">
+<div class="scene">
+    <div class="table"></div>
+    <div class="window">
 
-    <img src="./static/img/nycpixel.gif" width="410px" height="250px">
+        <img src="./static/img/nycpixel.gif" width="410px" height="250px">
+    </div>
+    <div class="screen-outline"></div>
+    <div class="screen">
+        <div class="screen-white"></div>
+    </div>
+    <div class="screen-stand"></div>
 </div>
-<div class="screen-outline"></div>
-<div class="screen">
-    <div class="screen-white"></div>
-</div>
-<div class="screen-stand"></div>
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>Zareen's Portfolio</title>
-</head>
 
 <body>
     <div class="menu-wrap">
@@ -61,7 +61,6 @@
             </div>
         </div>
     </div>
-
     <!----hero Section start---->
 
     <div class="backdrop">
@@ -69,12 +68,13 @@
             <h2 class="logo"><a href="/">Meet The Team</a></h2>
 
             <div class="content">
-                <h1>Zareen Kabir</h1>
-                <h3>Engineering Physics student</h3>
+
+                <h1>{{authorFirstName}} {{authorLastName}}</h1>
+                <h3>Computer Science student</h3>
                 <h4>MLH Production Engineer Summer 2022</h4>
+
             </div>
     </div>
-
 
     <!----About section start---->
     <section class="about">
@@ -83,43 +83,24 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <!--<h5>Developer <span>& Designer</span></h5>-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
     </section>
     <!------work experience section------>
     <div class="work-experience">
         <p>Work Experience</p>
-        <div class="blog-card">
-            <input type="radio" name="select" id="tap-1">
-            <input type="radio" name="select" id="tap-2">
-            <div class="sliders-work">
-                <label for="tap-1" class="tap tap-1"></label>
-                <label for="tap-2" class="tap tap-2"></label> 
-            </div>
-            <div class="inner-part">
-                <label for="" class ="img">
-                    <img src="./static/img/zareen.jpg">
-                </label>
-                <div class="contents content-1">
-                    <span>26 December 2017</span>
-                    <div class="title">>Lorem ipsum dolor</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                </div>
-            </div>
-            <div class="inner-part">
-                <label for="" class ="img">
-                    <img src="./static/img/zareen.jpg">
-                </label>
-                <div class="contents content-2">
-                    <span>26 December 2016</span>
-                    <div class="title">>Lorem ipsum dolor</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                </div>
-            </div>
-        </div>
+        {% for workExperience in workExperience %}
+        <h2> {{workExperience.title}} </h2>
+        <h2> {{workExperience.company}} </h2>
+        <h2> {{workExperience.startDate}} </h2>
+        <h2> {{workExperience.endDate}} </h2>
+        {% endfor %}
     </div>
-
     <!-----hobbies section start----------->
     <div class="hobbies">
         <div class="title">
@@ -131,7 +112,8 @@
                 <i class="fa fa-gamepad"></i>
                 <h5>Gaming</h5>
                 <div class="pra">
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
 
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -143,7 +125,8 @@
                 <i class="far fa-user"></i>
                 <h5>Insert Hobby Here</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
 
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -155,7 +138,8 @@
                 <i class="far fa-bell"></i>
                 <h5>Insert Hobby Here</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
 
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -165,17 +149,15 @@
         </div>
     </div>
     <!--current/previous education section-->
-    
-    
+
     <!--map of visited places-->
     <div class="map-content">
-        <h2>Cool places I visted</h2>
-        <iframe src="/zareen-map" height="500" width="1000" title="Cool places I visted!"></iframe>
+        <iframe src="/aleena-map" height="500" width="1000" title="Cool places I visted!"></iframe>
     </div>
 
     <!------footer start--------->
     <footer>
-        <p>Zareen Kabir</p>
+        <p>Aleena Tim</p>
         <p>connect with me!</p>
         <div class="social">
             <a href="#"><i class="fab fa-linkedin"></i></a>
