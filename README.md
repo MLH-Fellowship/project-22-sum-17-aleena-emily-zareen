@@ -19,9 +19,8 @@ This project has an MIT License.
 ## Building Process :hammer_and_wrench:
 
 To build the website, we used:
-- Flask for frameworks
-- HTML for structure
-- CSS for styling
+- Python, Flask - Template Inheritance, Block Content, Routing and Variable Rules
+- HTML, CSS - Structure and Styling Layouts
 
 ## Installation
 
