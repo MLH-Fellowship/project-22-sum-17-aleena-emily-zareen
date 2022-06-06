@@ -17,9 +17,6 @@ Our website theme was inspired by our pod name, the Pipelining Penguins, and the
 ## What it does
 The blog has cards in the homepage, as well as a menu to guide to different pages of the website. For each of the three team members, there is a portfolio with an About Me , Work Experience , Projects , Hobbies , and Interactive Map, section. There is also a Contact page in which you can contact any of the three team members.
 
-## How we built it
-To collaborate: We used Github, Discord
-To build the website: Flask and Jinja for the backend framework, HTML for the structure, Folium for the interactive map, and CSS for the styling
 
 ## Challenges we ran into
 -The learning curve with Flask and JInja since our team hs never used it before,
