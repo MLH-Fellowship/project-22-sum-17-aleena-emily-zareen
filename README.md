@@ -10,6 +10,30 @@ Our website theme was inspired by our pod name, the Pipelining Penguins, and the
 
 The blog has cards in the homepage, as well as a menu to guide to different pages of the website. For each of the three team members, there is a portfolio with an About Me :wave:, Work Experience :chart_with_upwards_trend:, Projects :computer:, Hobbies :video_game:, and Interactive Map :world_map: section. There is also a Contact page in which you can contact any of the three team members.
 
+## Inspiration
+
+Our website theme was inspired by our pod name, the Pipelining Penguins, and the clever penguins from the Madagascar film franchise! You can see fun animated penguins on the landing page of our site.
+
+## What it does
+The blog has cards in the homepage, as well as a menu to guide to different pages of the website. For each of the three team members, there is a portfolio with an About Me , Work Experience , Projects , Hobbies , and Interactive Map, section. There is also a Contact page in which you can contact any of the three team members.
+
+## How we built it
+To collaborate: We used Github, Discord
+To build the website: Flask and Jinja for the backend framework, HTML for the structure, Folium for the interactive map, and CSS for the styling
+
+## Challenges we ran into
+-The learning curve with Flask and JInja since our team hs never used it before,
+-We were also not very used to git and Github which created some issues.
+
+## Accomplishments that we're proud of
+-We were able to meet all the criterias outlined for this hackathon, as well as be able to utilize new technologies such as Flask.
+-We were also proud of our ability to collaborate well, and debugged well together
+
+## What we learned
+-How to use Flask and Jinja and it's template system
+-How to use Folium and blueprints to display maps
+-How to use Github collaboratively with pull requests and issues
+
 ## License :copyright:
 
 This project has an MIT License.
