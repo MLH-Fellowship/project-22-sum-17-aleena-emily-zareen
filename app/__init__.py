@@ -21,23 +21,15 @@ def aleena_portfolio():
     allUsers = data    
     return render_template('aleena-tim-portfolio.html', title="Aleena", allUsers=allUsers)
 
-@app.route('/portfolio/emily-portfolio')
+@app.route('/emily-lai-portfolio')
 def emily_portfolio():
     allUsers = data    
-    return render_template('emily-portfolio.html', title="Emily", allUsers=allUsers)
+    return render_template('emily-lai-portfolio.html', title="Emily", allUsers=allUsers)
 
-@app.route('/portfolio/zareen-portfolio')
+@app.route('/zareen-kabir-portfolio')
 def zareen_portfolio():
     allUsers = data    
-    return render_template('zareen-portfolio.html', title="Zareen", allUsers=allUsers)
-
-#@app.route('/emily-portfolio')
-#def emily_portfolio_page():
-#    return render_template('emily-portfolio.html', title="Emily's Portfolio", url=os.getenv("URL"), author="Emily")
-
-#@app.route('/zareen-portfolio')
-#def zareen_portfolio_page():
-#    return render_template('zareen-portfolio.html', title="Zareen's Portfolio", url=os.getenv("URL"), author="Zareen")
-    
+    return render_template('zareen-kabir-portfolio.html', title="Zareen", allUsers=allUsers)
+ 
 if __name__ == "__main__":
     app.run(debug=True)

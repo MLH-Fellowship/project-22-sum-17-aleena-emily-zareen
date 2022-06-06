@@ -1,62 +1,74 @@
 {% extends "base.html" %}
 
-{% block content %}
-<title>{% block title%}{% endblock %}</title>
+{% block content %}<style>
+    body {
+        background-color: #02006c;
+    }
+</style>
+<title>{% block title %}{% endblock %}</title>
 <link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
     <!----hero Section start---->
 
+    
+<div class="window">
+    <img src="./static/img/nycpixel.gif" width="410px" height="250px">
+</div>
+<div class="table"></div>
+<div class="laptop">
+    <img src="./static/img/laptop.png" width="610px" height="470px">
+    <div class="content">
+        <p>{% block userInfo %}{% endblock %}</p>
+        <h4>MLH Production Engineer Summer 2022</h4>
+    </div>
+</div>
+
     <div class="backdrop">
         <nav>
-            <h2 class="logo"><a href="/">Meet The Team</a></h2>
+            <h2 class="logo"><a href="/">HOME</a></h2>
 
-            <div class="content">
-                {% block content2 %}{% endblock %}
-            </div>
+            
     </div>
 
 
     <!----About section start---->
     <section class="about">
         <div class="main">
-            <img src="img/main-img.png">
+            {% block aboutmeimg %}{% endblock %}
             <div class="about-text">
                 <h2>About Me</h2>
-                <!--<h5>Developer <span>& Designer</span></h5>-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>{% block about %}{% endblock %}</p>
             </div>
         </div>
     </section>
     <!------work experience section------>
     <div class="work-experience">
-        <p>Work Experience</p>
         <div class="blog-card">
+            <h2>Work Experience</h2>
             <input type="radio" name="select" id="tap-1" checked>
-            <img class="img-1" src="#">
             <input type="radio" name="select" id="tap-2">
             <input type="checkbox" id="imgTap">
             <div class="sliders-work">
                 <label for="tap-1" class="tap tap-1"></label>
                 <label for="tap-2" class="tap tap-2"></label>
-     
             </div>
             <div class="inner-part">
                 <label for="" class ="img">
-                    <img src="./static/img/zareen.jpg">
+                    {% block workimg1 %}{% endblock %}
                 </label>
                 <div class="contents content-1">
-                    <span>21 January 2017 - 26 December 2017</span>
-                    <div class="title">>Lorem ipsum dolor</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                    <span>{% block duration1 %}{% endblock %}</span>
+                    <div class="title">{% block worktitle1 %}{% endblock %}</div>
+                    <div class="text">{% block workdescription1 %}{% endblock %}</div>
                 </div>
             </div>
             <div class="inner-part">
                 <label for="" class ="img">
-                    <img src="./static/img/logo.jpg">
+                    {% block workimg2 %}{% endblock %}
                 </label>
                 <div class="contents content-2">
-                    <span>26 December 2016</span>
-                    <div class="title">>Lorem ipsum dolor</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                    <span>{% block duration2 %}{% endblock %}</span>
+                    <div class="title">{% block worktitle2 %}{% endblock %}</div>
+                    <div class="text">{% block workdescription2 %}{% endblock %}</div>
                 </div>
             </div>
         </div>
@@ -71,9 +83,9 @@
         <div class="box">
             <div class="card">
                 <i class="fa fa-gamepad"></i>
-                <h5>Gaming</h5>
+                <h5>{% block hobbytitle1 %}{% endblock %}</h5>
                 <div class="pra">
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <h4>{% block hobbydescription1 %}{% endblock %}</p>
 
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -83,10 +95,9 @@
 
             <div class="card">
                 <i class="far fa-user"></i>
-                <h5>Insert Hobby Here</h5>
+                <h5>{% block hobbytitle2 %}{% endblock %}</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
+                    <p>{% block hobbydescription2 %}{% endblock %}</p>
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
                     </p>
@@ -95,10 +106,9 @@
 
             <div class="card">
                 <i class="far fa-bell"></i>
-                <h5>Insert Hobby Here</h5>
+                <h5>{% block hobbytitle3 %}{% endblock %}</h5>
                 <div class="pra">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
+                    <p>{% block hobbydescription3 %}{% endblock %}</p>
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
                     </p>
@@ -111,28 +121,21 @@
     
     <!--map of visited places-->
     <div class="map-content">
-        <h1>Cool places I visted</h1>
+        <h1>Cool places I visited</h1>
         <div class="map-screen">
-            <iframe src="/zareen-map" height="500" width="1000" title="Cool places I visted!" ></iframe>
+            <iframe src="/zareen-map" height="500" width="100%" title="Cool places I visited!" ></iframe>
         </div>
     </div>
 
     <!------footer start--------->
     <footer>
-        <p>Zareen Kabir</p>
+        <p>{% block name %}{% endblock %}</p>
         <p>connect with me!</p>
         <div class="social">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
+            {% block linkedin %}{% endblock %}<i class="fab fa-linkedin"></i></a>
+            {% block github %}{% endblock %}<i class="fab fa-github"></i></a>
+            {% block gmail %}{% endblock %}<i class="fab fa-google"></i></a>
         </div>
     </footer>
-    <!--
-    <div class="email">
-        <form>
-            <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-            <input type="submit" name="submit" value="Confirm">
-        </form>
-    </div>-->
 </body>
 {% endblock %}
