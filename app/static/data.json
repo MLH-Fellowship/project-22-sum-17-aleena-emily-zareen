@@ -107,10 +107,10 @@
                     "link": "https://glitch.com/~ml-snake"
                 },
                 {
-                    "title": "",
-                    "description": "",
-                    "image": "",
-                    "link": ""
+                    "title": "View more",
+                    "description": "View more on my github!",
+                    "image": "./static/img/ABCD Test.png",
+                    "link": "https://github.com/emilyirenelai"
                 }
             ],
             "social": [
