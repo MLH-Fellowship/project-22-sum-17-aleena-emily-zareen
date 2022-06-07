@@ -1,0 +1,202 @@
+{
+    "students": [
+        {
+            "name": "Aleena Tim",
+            "username": "aleena-tim",
+            "about": "My name is Aleena and I am currently a junior student studying Computer Science at Hunter College. I have always been most fascinated with the concept of computers and code because it represents the real-world simply through data. I am aspiring software engineer and during my free time, I like to play MOBA games and code up any creative project that comes to mind!",
+            "image": "",
+            "hobbies": "",
+            "education": [
+                {
+                    "name": "Hunter College",
+                    "major": "Computer Science",
+                    "year": "Junior"
+                }
+            ],
+            "work": [
+                {
+                    "title": "Coding Instructor",
+                    "company": "ScholarStem",
+                    "duration": "Sep 2021 - May 2022",
+                    "description": "Assigned projects that covers fundamental coding concepts and topics to reinforce computer science knowledge. Communicated with the CEO about classroom structure, project ideas and instructor progress. Coordinated virtual visits and training sessions to grade each instructor performance and engagement of the class. Hosted end-of-the-year coding fairs for students to showcase their best projects for parents, students and staff and were given prizes."
+                },
+                {
+                    "title": "WiTNY Robotics Researcher",
+                    "company": "WiTNY Foundation",
+                    "duration": "Sep 2018 - Dec 2018",
+                    "description": "Designed various educational games for the NAO Robot in order to enforce positive social and cognitive skills for children with disabilities. Utilized the NAO Robot object recognition, speech recognition and touch sensors to capture and respond to several sign language gestures. Constructed a research presentation regarding the NAO Robot's capabilities and its positive impact for early childhood education."
+                }
+            ],
+            "projects": [
+                {
+                    "title": "IGN Video Playlist",
+                    "description": "Developed a responsive, single-page video playlist app that reads data from IGN API w/ Ajax. Video player includes custom stylized video controls and the playlist queue. Loads the first video in the playlist into the video element on initial page load. After each video finishes playback, the next video in the list is automatically played until the playlist is completed.",
+                    "image": "../static/img/happy_plant.jpg",
+                    "link": "https://video-playlist-aleena-tim.glitch.me/"
+                },
+                {
+                    "title": "College Statistics Data App",
+                    "description": "Created a multi-page application to incorporate different data from each college in order to provide the best information for new students. The application is intended to be used by recent high school graduates or transfer students that want to view a list of college choices that best fits their needs.",
+                    "image": "../static/img/happy_plant.jpg",
+                    "link": "https://cuny-data-app.herokuapp.com/"
+                },
+                {
+                    "title": "Coronavirus Warehouse Website",
+                    "description": "Developed a fully-functional covid supply store website using PHP, SQL, CSS and HTML.",
+                    "image": "../static/img/happy_plant.jpg",
+                    "link": "https://occss.herokuapp.com/"
+                }
+            ],
+            "social": [
+                {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/aleenatim/"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/AleenaTim"
+                },
+                {
+                    "name": "Discord",
+                    "link": "Aleena#1227"
+                },
+                {
+                    "name": "Email",
+                    "link": "aleenatim@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "Emily Lai",
+            "username": "emily-lai",
+            "about": "I'm currently a first year Software Engineering student at Ontario Tech University. I'm also interested in data science, machine learning, and cloud computing.",
+            "image": "",
+            "hobbies": "",
+            "education": [
+                {
+                    "name": "Ontario Tech University",
+                    "major": "Software Engineering",
+                    "year": "Freshman"
+                }
+            ],
+            "work": [
+                {
+                    "title": "Data Science / Machine Learning Intern",
+                    "company": "Axcessiom Technologies",
+                    "duration": "Jan 2022 - present",
+                    "description": "Developing an offline speech recognition functionality using PocketSphinx."
+                },
+                {
+                    "title": "Workshop Mentor",
+                    "company": "Canada Learning Code",
+                    "duration": "Sep 2020 - present",
+                    "description": "Instruct, attend, and mentor students in coding lessons and workshops."
+                }
+            ],
+            "projects": [
+                {
+                    "title": "American Sign Language Interpreter",
+                    "description": "Interactive website using JavaScript, TensorFlow, ml5.js, p5.js, and Speech Synthesis libraries. Recognizes and displays messages from webcam input of hand signals.",
+                    "image": "asl5js.png",
+                    "link": "https://youtu.be/EXRUpbgf1SA"
+                },
+                {
+                    "title": "Computer Vision Snake",
+                    "description": "Classic game of Snake controlled by hand positions from webcam input",
+                    "image": "ML Snake.png",
+                    "link": "https://glitch.com/~ml-snake"
+                },
+                {
+                    "title": "View more",
+                    "description": "View more on my github!",
+                    "image": "./static/img/ABCD Test.png",
+                    "link": "https://github.com/emilyirenelai"
+                }
+            ],
+            "social": [
+                {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/-emily-lai/"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/emilyirenelai"
+                },
+                {
+                    "name": "Discord",
+                    "link": "EL#3269"
+                },
+                {
+                    "name": "Email",
+                    "link": "emilyirenelai@gmail.com"
+                }
+            ]
+        },
+        {
+            "name": "Zareen Kabir",
+            "username": "zareen-kabir",
+            "about": "I'm currently a Junior Engineering Physics student at McMaster University. I am interested in electronic systems, software, and their relationship to real world physics. In my free time I like to go on hiking adventures!",
+            "image": "zareen2.jpg",
+            "hobbies": "",
+            "education": [
+                {
+                    "name": "McMaster University",
+                    "major": "Engineering Physics",
+                    "year": "Junior"
+                }
+            ],
+            "work": [
+                {
+                    "title": "Student Researcher",
+                    "company": "McMaster University",
+                    "duration": "October 2021 - May 2022",
+                    "description": "Worked under Dr. Boyang Zhang to classify colon organoids using deep learning models to get insights into human physciology in comparison to animal models "
+                },
+                {
+                    "title": "Teaching Assistant",
+                    "company": "McMaster University Engineering Department",
+                    "duration": "August 2021 - May 2022",
+                    "description": "Lead students in projects and lab procedures to develop a thorough understanding of engineering principles, materials science, design, and programming skills."
+                }
+            ],
+            "projects": [
+                {
+                    "title": "Object Detection and Classification",
+                    "description": "A Raspberry Pi based hardware build that utilizes Pan-Tilt HAT and camera system to detect and track objects. TensorFlowLite Used for object recognition.",
+                    "image": "raspberrypi.jpg",
+                    "link": ""
+                },
+                {
+                    "title": "Towers of Hantow",
+                    "description": "A visual representation of the Tower of Hantow Problem, created in C",
+                    "image": "hantow-project.png",
+                    "link": "https://github.com/zareentk/Tower-of-Hanoi"
+                },
+                {
+                    "title": "Website Login System",
+                    "description": "A website login system in Python that utilizes a text file storing, retrieving, and verifying user credentials",
+                    "image": "websit_login.png",
+                    "link": "https://github.com/zareentk/Login-System"
+                }
+            ],
+            "social": [
+                {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/zareenkabir/"
+                },
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/zareentk"
+                },
+                {
+                    "name": "Discord",
+                    "link": "Zareen#7780"
+                },
+                {
+                    "name": "Email",
+                    "link": "zareenk@outlook.com"
+                }
+            ]
+        }
+    ]
+}

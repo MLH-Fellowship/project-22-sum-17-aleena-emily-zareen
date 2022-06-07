@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="table"></div>
+<title>{% block title %}{% endblock %}</title>
+<link lang='sass' rel="stylesheet" href="./static/styles/portfolio.css">
+<!----hero Section start---->
+
+<div class="bookshelf">
+    <img src="./static/img/bookshelf.png" width="410px" height="450px">
+</div>
+<div class="window">
+    <img src="./static/img/nycpixel.gif" width="410px" height="250px">
+</div>
+<div class="windowpane">
+    <img src="./static/img/windowpane.png" width="430px" height="320px">
+</div>
+
+<div class="laptop">
+    <img src="./static/img/laptop.png" width="610px" height="470px">
+    <div class="coffee"><img src="./static/img/coffee.gif" width="310px" height="250px"></div>
+    <div class="penguin"><img src="./static/img/penguinpet.png" width="310px" height="350px"></div>
+    <div class="content">
+        <p>{% block userInfo %}{% endblock %}</p>
+        <h4>MLH Production Engineer Summer 2022</h4>
+    </div>
+</div>
+
+<div class="backdrop">
+    <nav>
+        <h2 class="logo"><a href="/">HOME</a></h2>
+
+
+</div>
+
+
+<!----About section start---->
+<section class="about">
+    <div class="main">
+        {% block aboutmeimg %}{% endblock %}
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>{% block about %}{% endblock %}</p>
+        </div>
+    </div>
+</section>
+
+<!------work experience section------>
+<div class="work-experience">
+    <div class="blog-card">
+        <h2>Work Experience</h2>
+        <input type="radio" name="select" id="tap-1" checked>
+        <input type="radio" name="select" id="tap-2" checked>
+        <input type="checkbox" id="imgTap">
+        <div class="sliders-work">
+
+        </div>
+        <div class="inner-part">
+            <label for="" class="img">
+                {% block workimg1 %}{% endblock %}
+            </label>
+            <div class="contents content-1">
+                <span>{% block duration1 %}{% endblock %}</span>
+                <div class="title">{% block worktitle1 %}{% endblock %}</div>
+                <div class="subtitle">{% block company1 %}{% endblock %}</div>
+                <div class="text">{% block workdescription1 %}{% endblock %}</div>
+            </div>
+        </div>
+        <div class="inner-part">
+            <label for="" class="img">
+                {% block workimg2 %}{% endblock %}
+            </label>
+            <div class="contents content-2">
+                <span>{% block duration2 %}{% endblock %}</span>
+                <div class="title">{% block worktitle2 %}{% endblock %}</div>
+                <div class="subtitle">{% block company2 %}{% endblock %}</div>
+                <div class="text">{% block workdescription2 %}{% endblock %}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-----projects section start----------->
+<div class="projects">
+    <div class="title">
+        <h2>Projects</h2>
+    </div>
+    <div class="box">
+        <div class="card">
+                {% block projectimg1 %}{% endblock %}<div class="info"></div>
+            <div class="info">
+                <h1>{% block projecttitle1 %}{% endblock %}</h1>
+                <p>{% block projectdescription1 %}{% endblock %}</p>{% block projectlink1 %}{% endblock %}<button>View Code</button></a></class>
+            </div>
+        </div>
+        <div class="card">
+            {% block projectimg2 %}{% endblock %}<div class="info"></div>
+            <div class="info">
+                <h1>{% block projecttitle2 %}{% endblock %}</h1>
+                <p>{% block projectdescription2 %}{% endblock %}</p>{% block projectlink2 %}{% endblock %}<button>View Code</button></a></class>
+            </div>
+        </div>
+        <div class="card">
+            {% block projectimg3 %}{% endblock %}<div class="info"></div>
+            <div class="info">
+                <h1>{% block projecttitle3 %}{% endblock %}</h1>
+                <p>{% block projectdescription3 %}{% endblock %}</p><class="button">{% block projectlink3 %}{% endblock %}<button>View Code</button></a></class>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--map of visited places-->
+<div class="map">
+    <h2>Visited Places</h2>
+    <div class="map-content">
+        <div class="map-screen">
+            <iframe src="{% block userMap %}{% endblock %}" height="500px" width="850px"></iframe>
+        </div>
+    </div>
+</div>
+<!------footer start--------->
+<footer>
+    <p>{% block name %}{% endblock %}</p>
+    <p>Connect with me!</p>
+    <div class="social">
+        {% block linkedin %}{% endblock %}<i class="fab fa-linkedin"></i></a>
+        {% block github %}{% endblock %}<i class="fab fa-github"></i></a>
+        {% block gmail %}{% endblock %}<i class="fab fa-google"></i></a>
+    </div>
+    </div>
+</footer>
+</body>
+{% endblock %}
