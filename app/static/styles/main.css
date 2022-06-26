@@ -25,7 +25,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #40798C;
+    color: #40488c;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #000153;
 }
@@ -53,7 +53,7 @@ h6 {
     position: absolute;
     display: flex;
     text-align: center;
-    color: #40798C;
+    color: #404183;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #000153;
 }
