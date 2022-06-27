@@ -7,6 +7,7 @@ import json
 import datetime
 from dotenv import load_dotenv
 from playhouse.shortcuts import model_to_dict
+from pathlib import Path
 load_dotenv('.env')
 app = Flask(__name__)
 
@@ -28,7 +29,7 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 
 app.register_blueprint(map_app)
-dataFile = open("app\static\data.json" , encoding = "utf-8")
+dataFile = open(Path("app\static\data.json") , encoding = "utf-8")
 
 data = json.load(dataFile)
 
